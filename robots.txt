@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://andredewarr.com/sitemap.xml
+Sitemap: https://andredewarrbooks.com/sitemap.xml
