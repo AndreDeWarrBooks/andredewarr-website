@@ -125,6 +125,25 @@
     .calendar-preview small{display:block;margin-top:8px;color:var(--muted);line-height:1.45}
     @media(max-width:700px){.calendar-card{grid-template-columns:1fr}.calendar-card img{height:auto;min-height:0;aspect-ratio:216/303;object-fit:cover}}
 
+
+    .launch-notice{background:var(--night);color:#fff}
+    .launch-notice a{display:block;padding:14px 0;text-align:center;text-decoration:none;font-size:15px;line-height:1.5}
+    .launch-notice strong{color:var(--gold)}
+    .launch-notice span{display:inline-block;text-decoration:underline;text-underline-offset:3px;margin-left:12px}
+    #news{scroll-margin-top:220px}
+    .launch-news{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:36px;align-items:center}
+    .launch-news h3{font-size:clamp(30px,4vw,44px);line-height:1.15}
+    .launch-news .eyebrow{color:var(--accent);font-size:12px}
+    .launch-date{font-weight:700;color:var(--ink)!important}
+    .launch-reel{margin:0;min-width:0}
+    .launch-reel video{display:block;width:100%;max-height:520px;border-radius:12px;background:var(--night)}
+    .launch-reel figcaption{margin-top:10px;font-size:13px;color:var(--muted)}
+    .previous-news{margin-top:24px}
+    .previous-news h3{font-size:28px}
+    a:focus-visible,video:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+    @media(max-width:640px){.launch-news{grid-template-columns:1fr;gap:24px}.launch-reel{width:min(100%,320px);margin:auto}.launch-notice span{display:block;margin:4px 0 0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
     img.protected-image{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 </style>
 </head>
@@ -137,6 +156,9 @@
 </header>
 
 <main>
+<aside class="launch-notice" aria-label="New novel announcement">
+  <div class="wrap"><a href="#news"><strong>Coming 30 October 2026</strong> · What We Leave Behind <span>Discover the pre-launch</span></a></div>
+</aside>
 <section class="hero" id="home">
   <div class="wrap hero-grid">
     <div>
@@ -342,8 +364,33 @@
 
 <section id="news">
   <div class="wrap">
-    <div class="intro"><p class="eyebrow">Latest News</p><h2>Northbound is out now</h2></div>
-    <div class="news"><p><strong>Northbound</strong> is now available in ebook, paperback and hardback.</p></div>
+    <div class="intro"><p class="eyebrow">Latest News</p><h2>A new novel is on the way</h2></div>
+    <article class="news launch-news" aria-labelledby="launch-title">
+      <div>
+        <p class="eyebrow">Pre-launch announcement</p>
+        <h3 id="launch-title">What We Leave Behind</h3>
+        <p class="launch-date">Coming <time datetime="2026-10-30">30 October 2026</time></p>
+        <p>The forthcoming novel by André De Warr. Watch the short promotional reel ahead of release.</p>
+        <p>Not yet available to buy. Follow André for release updates.</p>
+        <div class="buttons"><a class="btn primary" href="#contact">Follow for release updates</a></div>
+      </div>
+      <figure class="launch-reel">
+        <video controls playsinline preload="none" aria-label="What We Leave Behind promotional reel" aria-describedby="reel-caption">
+          <source src="what-we-leave-behind-reel.mp4" type="video/mp4">
+          Your browser does not support embedded video. <a href="what-we-leave-behind-reel.mp4">Watch the promotional reel</a>.
+        </video>
+        <figcaption id="reel-caption">What We Leave Behind · Promotional reel. Release scheduled for 30 October 2026.</figcaption>
+      </figure>
+    </article>
+    <article class="news previous-news">
+      <p class="eyebrow">Coming soon · Children's books</p>
+      <h3>Cookie &amp; Mia</h3>
+      <p>Children’s books about Cookie &amp; Mia are on the way. Follow André for more news and release updates.</p>
+    </article>
+    <article class="news previous-news">
+      <h3>Northbound is out now</h3>
+      <p><strong>Northbound</strong> is now available in ebook, paperback and hardback.</p>
+    </article>
   </div>
 </section>
 
