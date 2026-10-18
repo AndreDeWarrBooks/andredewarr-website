@@ -144,7 +144,18 @@
     @media(max-width:640px){.launch-news{grid-template-columns:1fr;gap:24px}.launch-reel{width:min(100%,320px);margin:auto}.launch-notice span{display:block;margin:4px 0 0}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-    /* Audiobook announcement, awaiting ACX approval */
+    /* Audiobook retail options */
+    .audiobook-purchase-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+    .audiobook-purchase-option{background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-width:0}
+    .audiobook-purchase-option .audiobook-option-label{font-size:13px;font-weight:800;letter-spacing:.035em;color:#654c32}
+    .audiobook-purchase-option .audiobook-option-price{font:700 38px/1 Georgia,serif}
+    .audiobook-purchase-option p{font-size:14px;color:#536171;margin:0;line-height:1.5}
+    .audiobook-pending{display:block;margin-top:auto;font-size:13px;font-weight:700;color:#704d1a;background:#f6eddd;border-radius:8px;padding:10px 12px}
+    .audiobook-buy-link{background:var(--accent);color:#fff;margin-top:auto}
+    .audiobook-buy-link:hover{background:var(--accent-dark)}
+    @media(max-width:700px){.audiobook-purchase-options{grid-template-columns:1fr}}
+    /* Audiobook section */
+
     #audiobook{background:linear-gradient(125deg,#17212c,#26394c);color:#fff;scroll-margin-top:150px}
     .audiobook-grid{display:grid;grid-template-columns:minmax(180px,280px) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center}
     .audiobook-grid img{width:100%;max-width:280px;aspect-ratio:2/3;object-fit:cover;border-radius:14px;box-shadow:0 22px 55px #0006}
@@ -242,9 +253,21 @@
       <h2 id="audiobook-title">The Troubles and Tribulations: In the Life of a Nobody</h2>
       <p class="audiobook-status">Now available to purchase on Audible</p>
       <p>André De Warr's personal story of mistakes, loss, survival and finding a way forward is now available as an audiobook. Experience the journey through the spoken word — from difficult beginnings to fresh starts and the roads in between.</p>
-      <p class="audiobook-detail">3 hours 43 minutes · English · Audible UK: £11.99 (price may change)</p>
-      <p class="audiobook-note">Available now on Audible UK. Listen to a preview or purchase the complete audiobook using the link below.</p>
-      <div class="buttons"><a class="btn secondary" href="https://www.audible.co.uk/pd/B0HNHCZ1FJ" target="_blank" rel="noopener noreferrer">Buy on Audible — £11.99</a></div>
+      <p class="audiobook-detail">3 hours 43 minutes · English · Unabridged</p>
+      <div class="audiobook-purchase-options" aria-label="Audiobook buying options">
+        <div class="audiobook-purchase-option">
+          <span class="audiobook-option-label">Direct from André De Warr Books</span>
+          <strong class="audiobook-option-price">£9.99</strong>
+          <p>Independent digital download — checkout and automatic delivery being set up.</p>
+          <span class="audiobook-pending">Coming soon · Not yet available to order</span>
+        </div>
+        <div class="audiobook-purchase-option">
+          <span class="audiobook-option-label">Audible UK</span>
+          <strong class="audiobook-option-price">£11.99</strong>
+          <p>Available now on Audible. The retail price may change.</p>
+          <a class="btn audiobook-buy-link" href="https://www.audible.co.uk/pd/B0HNHCZ1FJ" target="_blank" rel="noopener noreferrer">Buy on Audible</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
