@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="description" content="Explore André De Warr’s books and The Troubles and Tribulations audiobook, now available on Audible. Official author website.">
+ <meta name="description" content="Explore André De Warr’s books and The Troubles and Tribulations audiobook, now on Audible, Spotify and Kobo. Official author website.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://andredewarrbooks.com/">
   <meta property="og:url" content="https://andredewarrbooks.com/">
@@ -149,6 +149,7 @@
     .audiobook-purchase-option{background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-width:0}
     .audiobook-purchase-option .audiobook-option-label{font-size:13px;font-weight:800;letter-spacing:.035em;color:#654c32}
     .audiobook-purchase-option .audiobook-option-price{font:700 38px/1 Georgia,serif}
+    .audiobook-purchase-option .audiobook-option-platform{font:700 clamp(22px,2.2vw,28px)/1.15 Georgia,serif;min-height:2.3em;display:flex;align-items:center}
     .audiobook-purchase-option p{font-size:14px;color:#536171;margin:0;line-height:1.5}
     .audiobook-pending{display:block;margin-top:auto;font-size:13px;font-weight:700;color:#704d1a;background:#f6eddd;border-radius:8px;padding:10px 12px}
     .audiobook-buy-link{background:var(--accent);color:#fff;margin-top:auto}
@@ -167,6 +168,19 @@
     .audiobook-grid .audiobook-note{font-size:14px;color:#c7cbd1}
     #audiobook .secondary{color:#fff;background:transparent;border:1px solid #ffffff80}
     @media(max-width:700px){.audiobook-grid{grid-template-columns:1fr}.audiobook-grid img{max-width:210px;margin:auto}}
+
+    /* Social media icons in footer */
+    footer .wrap{flex-wrap:wrap;row-gap:16px}
+    footer .wrap>p{flex-basis:100%;text-align:center}
+    .footer-social{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+    .footer-social-label{font-size:13px;text-transform:uppercase;font-weight:700;letter-spacing:.06em;color:#c7cfd7}
+    .footer-social-links{display:flex;align-items:center;gap:10px}
+    .footer-social-links a{width:42px;height:42px;display:flex;align-items:center;justify-content:center;color:#f2d49b;background:#25303c;border:1px solid #d8b06b88;border-radius:50%;text-decoration:none;transition:background .2s ease,transform .2s ease}
+    .footer-social-links a:hover{background:#354b60;transform:translateY(-2px)}
+    .footer-social-links svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+    .footer-social-links .footer-social-filled{fill:currentColor;stroke:none}
+    @media(max-width:640px){footer .wrap{align-items:flex-start}footer .wrap>p{text-align:left}.footer-social{align-items:flex-start}}
+    @media(prefers-reduced-motion:reduce){.footer-social-links a{transition:none}.footer-social-links a:hover{transform:none}}
 
     img.protected-image{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 </style>
@@ -251,7 +265,7 @@
     <div>
       <p class="eyebrow">Audiobook · Available now</p>
       <h2 id="audiobook-title">The Troubles and Tribulations: In the Life of a Nobody</h2>
-      <p class="audiobook-status">Available now — buy direct or listen on Audible</p>
+      <p class="audiobook-status">Available now — Audible · Spotify · Kobo · Buy direct</p>
       <p>André De Warr's personal story of mistakes, loss, survival and finding a way forward is now available as an audiobook. Experience the journey through the spoken word — from difficult beginnings to fresh starts and the roads in between.</p>
       <p class="audiobook-detail">3 hours 43 minutes · English · Unabridged</p>
       <div class="audiobook-purchase-options" aria-label="Audiobook buying options">
@@ -266,6 +280,18 @@
           <strong class="audiobook-option-price">£11.99</strong>
           <p>Available now on Audible. The retail price may change.</p>
           <a class="btn audiobook-buy-link" href="https://www.audible.co.uk/pd/B0HNHCZ1FJ" target="_blank" rel="noopener noreferrer">Buy on Audible</a>
+        </div>
+        <div class="audiobook-purchase-option">
+          <span class="audiobook-option-label">Spotify</span>
+          <strong class="audiobook-option-platform">Listen on Spotify</strong>
+          <p>Now available on Spotify. Pricing and listening options are shown on Spotify.</p>
+          <a class="btn audiobook-buy-link" href="https://open.spotify.com/show/1ZFDVISOXn9NndFjl4yEHf" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+        </div>
+        <div class="audiobook-purchase-option">
+          <span class="audiobook-option-label">Kobo Audiobooks</span>
+          <strong class="audiobook-option-platform">Available on Kobo</strong>
+          <p>Find the audiobook on Kobo. This button opens Kobo’s audiobook catalogue while the direct title link is being confirmed.</p>
+          <a class="btn audiobook-buy-link" href="https://www.kobo.com/gb/en/audiobooks" target="_blank" rel="noopener noreferrer">Browse Kobo audiobooks</a>
         </div>
       </div>
     </div>
@@ -533,6 +559,23 @@
     <img class="footer-logo protected-image" src="andre-de-warr-books-logo.png" alt="André De Warr Books logo" draggable="false" decoding="async">
     <strong>André De Warr — Author</strong>
   </div>
+  <nav class="footer-social" aria-label="Follow André De Warr Books">
+    <span class="footer-social-label">Follow André</span>
+    <div class="footer-social-links">
+      <a href="https://www.tiktok.com/@andredewarrbooks" target="_blank" rel="noopener noreferrer" aria-label="TikTok (opens in new tab)" title="TikTok">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13 3v12.5a4.5 4.5 0 1 1-4.5-4.5c.5 0 1 .08 1.5.24"/><path d="M13 3c.6 3.6 3.5 5.8 7 5.8"/></svg>
+      </a>
+      <a href="https://www.facebook.com/share/1DebjLf98k/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (opens in new tab)" title="Facebook">
+        <svg class="footer-social-filled" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.9 3H12c-3 0-4.5 1.8-4.5 4.8V10H5v4h2.5v7H12v-7h3.2l.5-4H12V8.2c0-.9.3-1.3 1.5-1.3h1.4V3Z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/andre_de_warr?stkn=MTU5ZXVyNzVtNWtlZQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in new tab)" title="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://youtube.com/@andre_de_warr?si=l9aM3UOQ0xEW7f89" target="_blank" rel="noopener noreferrer" aria-label="YouTube (opens in new tab)" title="YouTube">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3Z" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+  </nav>
   <p>Direct sales: André De Warr Books · © 2026 André De Warr. All rights reserved.</p>
 </div></footer>
 
