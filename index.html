@@ -40,6 +40,20 @@
     .book-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 12px 34px #0001}
     .book-card img{width:100%;aspect-ratio:2/3;object-fit:cover}.book-body{padding:22px}.book-body p{color:var(--muted);margin:8px 0 0}
     .placeholder{display:inline-block;margin-top:16px;padding:10px 15px;background:#eee7dc;border-radius:999px;color:#5c6470;font-size:13px;font-weight:700}
+    /* What We Leave Behind announcement and pre-order enquiries */
+    #what-we-leave-behind{scroll-margin-top:125px}
+    .book-card-featured{grid-column:1 / -1;display:grid;grid-template-columns:minmax(250px,0.75fr) minmax(0,1.55fr);align-items:stretch}
+    .book-card-featured .book-body{padding:clamp(22px,4vw,42px);align-self:center}
+    .book-card-featured .book-body p{max-width:68ch}
+    .book-card-featured .buttons{margin-top:20px}
+    .wwlb-title-art{min-height:435px;background:radial-gradient(ellipse at 55% 70%,#6d421d,transparent 65%),repeating-linear-gradient(135deg,#302017 0px,#302017 2px,#161210 2px,#161210 11px);color:#f1d9a4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;text-align:center;padding:34px 24px;border-right:5px solid #b18a49}
+    .wwlb-art-label{font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:700}
+    .wwlb-art-title{font:700 clamp(38px,4vw,60px)/.98 Georgia,serif;letter-spacing:.035em}
+    .wwlb-art-subtitle{max-width:20ch;font:400 15px/1.5 Georgia,serif;text-transform:uppercase;letter-spacing:.09em}
+    .wwlb-art-author{margin-top:28px;font:700 17px Georgia,serif;letter-spacing:.20em}
+    .wwlb-order-note{font-size:13px;color:#647080!important}
+    @media(max-width:700px){.book-card-featured{grid-template-columns:1fr}.wwlb-title-art{min-height:360px;border-right:0;border-bottom:5px solid #b18a49}}
+
 
     .signed-section{background:#efe7da}
     .shop-logo{display:block;width:min(280px,70vw);height:auto;margin:0 0 20px 0}
@@ -198,7 +212,7 @@
 
 <main>
 <aside class="launch-notice" aria-label="New novel announcement">
-  <div class="wrap"><a href="#news"><strong>Coming 30 October 2026</strong> · What We Leave Behind <span>Discover the pre-launch</span></a></div>
+  <div class="wrap"><a href="#what-we-leave-behind"><strong>Coming 30 October 2026</strong> · What We Leave Behind <span>Explore the book &amp; pre-order enquiries</span></a></div>
 </aside>
 <section class="hero" id="home">
   <div class="wrap hero-grid">
@@ -224,10 +238,31 @@
     <div class="intro">
       <p class="eyebrow">Books</p>
       <h2>Books by André De Warr</h2>
-      <p>Published titles and the current release.</p>
+      <p>Discover the books available now and the next novel, arriving 30 October 2026.</p>
       <div class="buttons"><a class="btn secondary" href="https://www.amazon.com/author/andredewarrbooks" target="_blank" rel="noopener noreferrer">View All My Books on Amazon</a></div>
     </div>
     <div class="book-grid">
+      <article class="book-card book-card-featured" id="what-we-leave-behind" aria-labelledby="wwlb-book-title">
+        <div class="wwlb-title-art" role="img" aria-label="What We Leave Behind book title announcement">
+          <span class="wwlb-art-label">New novel · 30 October 2026</span>
+          <span class="wwlb-art-title">WHAT WE<br>LEAVE<br>BEHIND</span>
+          <span class="wwlb-art-subtitle">Some truths never stay buried</span>
+          <span class="wwlb-art-author">ANDRÉ DE WARR</span>
+        </div>
+        <div class="book-body">
+          <div class="status">Coming 30 October 2026 · Pre-launch</div>
+          <h3 id="wwlb-book-title">What We Leave Behind</h3>
+          <p>A story of family, memory and long-buried secrets. When someone from Dan Mercer's past contacts him after almost thirty years, unanswered questions and the disappearance of four women force him to confront difficult truths.</p>
+          <p><strong>Paperback and hardback:</strong> scheduled for release on 30 October. Amazon's listings are expected to become available for purchase on release day.</p>
+          <p>Interested in ordering a signed copy? Get in touch ahead of publication to enquire about availability and arrangements.</p>
+          <div class="buttons">
+            <a class="btn primary" href="mailto:andredewarr@gmail.com?subject=What%20We%20Leave%20Behind%20signed%20copy%20pre-order%20enquiry">Enquire about a signed pre-order</a>
+            <a class="btn secondary" href="#news">Watch the book trailer</a>
+          </div>
+          <p class="wwlb-order-note">The enquiry button opens an email; it does not take payment or confirm an order.</p>
+        </div>
+      </article>
+
       <article class="book-card">
         <img src="troubles.jpg" alt="The Troubles and Tribulations in the Life of a Nobody book cover" class="protected-image" draggable="false" decoding="async">
         <div class="book-body">
@@ -452,8 +487,8 @@
         <h3 id="launch-title">What We Leave Behind</h3>
         <p class="launch-date">Coming <time datetime="2026-10-30">30 October 2026</time></p>
         <p>The forthcoming novel by André De Warr. Watch the short promotional reel ahead of release.</p>
-        <p>Not yet available to buy. Follow André for release updates.</p>
-        <div class="buttons"><a class="btn primary" href="#contact">Follow for release updates</a></div>
+        <p>Paperback and hardback editions are scheduled for release on 30 October. Amazon purchase listings will become visible on release day.</p>
+        <div class="buttons"><a class="btn primary" href="#what-we-leave-behind">View the book and signed pre-order enquiries</a></div>
       </div>
       <figure class="launch-reel">
         <video controls playsinline preload="none" aria-label="What We Leave Behind promotional reel" aria-describedby="reel-caption">
