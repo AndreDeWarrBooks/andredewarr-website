@@ -172,14 +172,17 @@
     /* Social media icons in footer */
     footer .wrap{flex-wrap:wrap;row-gap:16px}
     footer .wrap>p{flex-basis:100%;text-align:center}
+    .footer-link-groups{display:flex;flex-direction:column;align-items:flex-start;gap:14px;margin-left:auto}
     .footer-social{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+    .footer-audio .footer-social-label{min-width:0}
+    .footer-kobo-mark{font:700 25px/1 Georgia,serif}
     .footer-social-label{font-size:13px;text-transform:uppercase;font-weight:700;letter-spacing:.06em;color:#c7cfd7}
     .footer-social-links{display:flex;align-items:center;gap:10px}
     .footer-social-links a{width:42px;height:42px;display:flex;align-items:center;justify-content:center;color:#f2d49b;background:#25303c;border:1px solid #d8b06b88;border-radius:50%;text-decoration:none;transition:background .2s ease,transform .2s ease}
     .footer-social-links a:hover{background:#354b60;transform:translateY(-2px)}
     .footer-social-links svg{width:21px;height:21px;display:block;pointer-events:none;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
     .footer-social-links .footer-social-filled{fill:currentColor;stroke:none}
-    @media(max-width:640px){footer .wrap{align-items:flex-start}footer .wrap>p{text-align:left}.footer-social{align-items:flex-start}}
+    @media(max-width:640px){footer .wrap{align-items:flex-start}footer .wrap>p{text-align:left}.footer-link-groups{margin-left:0}.footer-social{align-items:flex-start}}
     @media(prefers-reduced-motion:reduce){.footer-social-links a{transition:none}.footer-social-links a:hover{transform:none}}
 
     img.protected-image{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
@@ -559,6 +562,7 @@
     <img class="footer-logo protected-image" src="andre-de-warr-books-logo.png" alt="André De Warr Books logo" draggable="false" decoding="async">
     <strong>André De Warr — Author</strong>
   </div>
+  <div class="footer-link-groups">
   <nav class="footer-social" aria-label="Follow André De Warr Books">
     <span class="footer-social-label">Follow André</span>
     <div class="footer-social-links">
@@ -576,6 +580,21 @@
       </a>
     </div>
   </nav>
+  <nav class="footer-social footer-audio" aria-label="The Troubles audiobook platforms">
+    <span class="footer-social-label">Listen to The Troubles</span>
+    <div class="footer-social-links">
+      <a href="https://www.audible.co.uk/pd/B0HNHCZ1FJ" target="_blank" rel="noopener noreferrer" aria-label="The Troubles audiobook on Audible (opens in new tab)" title="Listen on Audible">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.5 16.5c3.5-5 15.5-5 19 0"/><path d="M5 19c3.1-3.7 10.9-3.7 14 0"/><path d="M8 21c2-1.6 6-1.6 8 0"/><path d="M5.5 8.8c4.7-4 8.3-4 13 0"/></svg>
+      </a>
+      <a href="https://open.spotify.com/show/1ZFDVISOXn9NndFjl4yEHf" target="_blank" rel="noopener noreferrer" aria-label="The Troubles audiobook on Spotify (opens in new tab)" title="Listen on Spotify">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><path d="M6.5 9.2c4.5-1.3 9.2-.7 12.1 1.3"/><path d="M7.4 12.5c3.9-1.1 7.7-.6 10.2 1.1"/><path d="M8.4 15.5c3-1 5.8-.5 8 .8"/></svg>
+      </a>
+      <a href="https://www.kobo.com/gb/en/audiobooks" target="_blank" rel="noopener noreferrer" aria-label="Browse Kobo audiobooks (opens in new tab)" title="Kobo audiobook catalogue">
+        <span class="footer-kobo-mark" aria-hidden="true">K</span>
+      </a>
+    </div>
+  </nav>
+  </div>
   <p>Direct sales: André De Warr Books · © 2026 André De Warr. All rights reserved.</p>
 </div></footer>
 
