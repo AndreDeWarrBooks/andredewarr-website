@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="description" content="Explore André De Warr’s books and The Troubles and Tribulations audiobook, now on Audible, Spotify and Kobo. Official author website.">
+ <meta name="description" content="Discover books by André De Warr: The Troubles and Tribulations, The Long Road Home, Northbound, What We Leave Behind and Before the Silence, plus audiobook options.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://andredewarrbooks.com/">
   <meta property="og:url" content="https://andredewarrbooks.com/">
@@ -39,6 +39,8 @@
     .book-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
     .book-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 12px 34px #0001}
     .book-card img{width:100%;aspect-ratio:2/3;object-fit:cover}.book-body{padding:22px}.book-body p{color:var(--muted);margin:8px 0 0}
+    .book-announcement{grid-column:1/-1;background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(24px,3vw,36px)}.book-announcement p{max-width:72ch;color:var(--muted)}
+    .book-detail-link{margin:14px 0 0 10px}
     .placeholder{display:inline-block;margin-top:16px;padding:10px 15px;background:#eee7dc;border-radius:999px;color:#5c6470;font-size:13px;font-weight:700}
     /* What We Leave Behind announcement and pre-order enquiries */
     #what-we-leave-behind{scroll-margin-top:125px}
@@ -245,7 +247,7 @@
     <div class="intro">
       <p class="eyebrow">Books</p>
       <h2>Books by André De Warr</h2>
-      <p>Discover the books available now and the next novel, arriving 30 October 2026.</p>
+      <p>Discover the books available now, plus What We Leave Behind (30 October 2026) and Before the Silence (25 November 2026).</p>
       <div class="buttons"><a class="btn secondary" href="https://www.amazon.co.uk/Andr%C3%A9-De-Warr/e/B0HHFG7L8B" target="_blank" rel="noopener noreferrer">View All My Books on Amazon</a></div>
     </div>
     <div class="book-grid">
@@ -265,6 +267,7 @@
           <div class="buttons">
             <a class="btn primary" href="mailto:contact@andredewarrbooks.com?subject=What%20We%20Leave%20Behind%20signed%20copy%20pre-order%20enquiry">Enquire about a signed pre-order</a>
             <a class="btn secondary" href="#news">Watch the book trailer</a>
+            <a class="btn secondary" href="what-we-leave-behind.html">Read about this book</a>
           </div>
           <p class="wwlb-order-note">The enquiry button opens an email; it does not take payment or confirm an order.</p>
         </div>
@@ -278,6 +281,7 @@
           <p>A personal, reflective story shaped by anger, regret, prison, loss, redemption and hope.</p>
           <p><strong>Giving back:</strong> 60% of the author's royalties from every copy sold are donated to two local mental-health services that have personally supported André, split equally at 30% each.</p>
           <a class="btn amazon" href="https://amzn.eu/d/04O5prsP" target="_blank" rel="noopener">Buy on Amazon</a>
+          <a class="btn secondary book-detail-link" href="the-troubles-and-tribulations.html">Read about this book</a>
         </div>
       </article>
 
@@ -288,6 +292,7 @@
           <h3>The Long Road Home</h3>
           <p>An emotional story about family, consequences and the long journey back to what matters most.</p>
           <a class="btn amazon" href="https://amzn.eu/d/0hb4KW0d" target="_blank" rel="noopener">Buy on Amazon</a>
+          <a class="btn secondary book-detail-link" href="the-long-road-home.html">Read about this book</a>
         </div>
       </article>
 
@@ -298,7 +303,14 @@
           <h3>Northbound</h3>
           <p>A fictional motorcycle journey through Europe, following Mick and Brian through humour, friendship, spectacular landscapes and the unexpected turns of the open road.</p>
           <a class="btn amazon" href="https://amzn.eu/d/03QSdKdl" target="_blank" rel="noopener">Buy on Amazon</a>
+          <a class="btn secondary book-detail-link" href="northbound.html">Read about this book</a>
         </div>
+      </article>
+      <article class="book-announcement" id="before-the-silence" aria-labelledby="before-title">
+        <div class="status">Coming 25 November 2026</div>
+        <h3 id="before-title">Before the Silence</h3>
+        <p>The forthcoming Dan Mercer prequel explores the years and choices leading up to the family separation at the heart of The Long Road Home.</p>
+        <a class="btn secondary" href="before-the-silence.html">Read about this book</a>
       </article>
     </div>
   </div>
