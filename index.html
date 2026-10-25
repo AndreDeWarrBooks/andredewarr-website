@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="description" content="Discover books by André De Warr: The Troubles and Tribulations, The Long Road Home, Northbound, What We Leave Behind and Before the Silence, plus audiobook options.">
+ <meta name="description" content="Discover André De Warr's books, including Cookie and Mia's Christmas Colouring Book, Northbound, The Long Road Home and more.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://andredewarrbooks.com/">
   <meta property="og:url" content="https://andredewarrbooks.com/">
@@ -42,6 +42,15 @@
     .book-announcement{grid-column:1/-1;background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(24px,3vw,36px)}.book-announcement p{max-width:72ch;color:var(--muted)}
     .book-detail-link{margin:14px 0 0 10px}
     .placeholder{display:inline-block;margin-top:16px;padding:10px 15px;background:#eee7dc;border-radius:999px;color:#5c6470;font-size:13px;font-weight:700}
+    /* Cookie & Mia Christmas colouring book */
+    #cookie-and-mia{scroll-margin-top:150px}
+    .cookie-mia-art{min-height:435px;background:radial-gradient(circle at 50% 75%,#ffffff70,transparent 46%),linear-gradient(150deg,#122d5b,#2268a2 48%,#d33a39);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:32px 22px;border-right:5px solid #caab60}
+    .cookie-mia-art-top{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#fff0d1}
+    .cookie-mia-art-title{font:700 clamp(39px,5vw,62px)/1.04 Georgia,serif;text-shadow:0 3px 15px #0007}
+    .cookie-mia-art-subtitle{font:700 clamp(23px,3vw,34px)/1.15 Georgia,serif;color:#ffe5ab}
+    .cookie-mia-art-symbols{font-size:28px}
+    .cookie-mia-art-bottom{font-size:15px;font-weight:700;letter-spacing:.05em}
+    @media(max-width:700px){.cookie-mia-art{min-height:320px;border-right:0;border-bottom:5px solid #caab60}}
     /* What We Leave Behind announcement and pre-order enquiries */
     #what-we-leave-behind{scroll-margin-top:125px}
     .book-card-featured{grid-column:1 / -1;display:grid;grid-template-columns:minmax(250px,0.75fr) minmax(0,1.55fr);align-items:stretch}
@@ -251,6 +260,23 @@
       <div class="buttons"><a class="btn secondary" href="https://www.amazon.co.uk/Andr%C3%A9-De-Warr/e/B0HHFG7L8B" target="_blank" rel="noopener noreferrer">View All My Books on Amazon</a></div>
     </div>
     <div class="book-grid">
+      <article class="book-card book-card-featured" id="cookie-and-mia" aria-labelledby="cookie-mia-title">
+        <div class="cookie-mia-art" role="img" aria-label="Cookie and Mia Christmas Adventure — festive children's colouring book">
+          <span class="cookie-mia-art-top">André De Warr Books</span>
+          <span class="cookie-mia-art-title">Cookie &amp; Mia</span>
+          <span class="cookie-mia-art-subtitle">Christmas Adventure</span>
+          <span class="cookie-mia-art-symbols" aria-hidden="true">❄ 🐾 🎄 🐾 ❄</span>
+          <span class="cookie-mia-art-bottom">Christmas colouring fun</span>
+        </div>
+        <div class="book-body">
+          <div class="status">New Christmas colouring book · Amazon review pending</div>
+          <h3 id="cookie-mia-title">Cookie and Mia's Christmas Colouring Book</h3>
+          <p>Meet Cookie and Mia, real-life twin Shihpoo sisters with very different personalities: Cookie is always curious and ready to explore, while Mia is calm, loving and protective. Join them for festive colouring adventures filled with Christmas trees, snowmen, Santa and plenty of seasonal fun.</p>
+          <p><strong>40 Christmas illustrations · Large A4 paperback · Ages 4–9</strong></p>
+          <p><strong>Amazon UK price: £7.99.</strong> Submitted to Amazon KDP; the purchase listing will be linked here when it becomes available.</p>
+          <span class="placeholder">Amazon listing coming soon</span>
+        </div>
+      </article>
       <article class="book-card book-card-featured" id="what-we-leave-behind" aria-labelledby="wwlb-book-title">
         <div class="wwlb-title-art" role="img" aria-label="What We Leave Behind book title announcement">
           <span class="wwlb-art-label">New novel · 30 October 2026</span>
