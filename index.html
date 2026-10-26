@@ -151,6 +151,21 @@
     @media(max-width:700px){.calendar-card{grid-template-columns:1fr}.calendar-card img{height:auto;min-height:0;aspect-ratio:216/303;object-fit:cover}}
 
 
+    /* Strathearn Herald press coverage */
+    .press-feature{display:grid;grid-template-columns:minmax(190px,.62fr) minmax(0,1.38fr);gap:0;overflow:hidden;padding:0}
+    .press-feature .press-front{background:#17212c;color:#f3ede2;display:flex;flex-direction:column;justify-content:space-between;gap:25px;padding:clamp(26px,4vw,42px);border-right:5px solid var(--gold)}
+    .press-front .press-masthead{font:700 clamp(22px,3vw,34px)/1.15 Georgia,serif;letter-spacing:-.025em;color:#fff}
+    .press-front .press-kicker{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.16em;color:var(--gold)}
+    .press-front .press-headline{font:700 clamp(28px,3.1vw,40px)/1.1 Georgia,serif;color:#fff}
+    .press-front .press-date{font-size:13px;color:#cdd4dd}
+    .press-feature .press-story{padding:clamp(26px,4vw,42px);align-self:center}
+    .press-story h3{font-size:clamp(27px,3.5vw,40px);line-height:1.15}
+    .press-story .press-credit{font-size:14px;color:#526170;font-weight:700}
+    .press-story p{color:#4b5968;font-size:16px}
+    .press-story .press-source-note{font-size:13px;color:#637181}
+    .press-story .buttons{margin-top:22px}
+    @media(max-width:700px){.press-feature{grid-template-columns:1fr}.press-feature .press-front{min-height:270px;border-right:0;border-bottom:5px solid var(--gold)}}
+
     .launch-notice{background:var(--night);color:#fff}
     .launch-notice a{display:block;padding:14px 0;text-align:center;text-decoration:none;font-size:15px;line-height:1.5}
     .launch-notice strong{color:var(--gold)}
@@ -525,7 +540,25 @@
 
 <section id="news">
   <div class="wrap">
-    <div class="intro"><p class="eyebrow">Latest News</p><h2>A new novel is on the way</h2></div>
+    <div class="intro"><p class="eyebrow">Latest News &amp; Press</p><h2>News from André De Warr Books</h2></div>
+    <article class="news press-feature" id="press-strathearn-herald-2026" aria-labelledby="press-strathearn-title">
+      <div class="press-front" aria-label="Strathearn Herald newspaper coverage">
+        <span class="press-masthead">Strathearn Herald</span>
+        <span class="press-kicker">Front-page feature · 22 October 2026</span>
+        <strong class="press-headline">A Novel Way to Defeat Stress and Depression</strong>
+        <span class="press-date">Thursday 22 October 2026</span>
+      </div>
+      <div class="press-story">
+        <p class="eyebrow">In the press · Strathearn Herald</p>
+        <h3 id="press-strathearn-title">Driver's Road to Recovery Leads to Writing Passion</h3>
+        <p class="press-credit">Strathearn Herald · Page 3 · 22 October 2026</p>
+        <p>André De Warr's journey from HGV driving to becoming a published author is featured in the <em>Strathearn Herald</em>. The story explores how, after being signed off work with burnout, stress and depression in July 2026, André discovered a passion for writing and began sharing his stories with readers.</p>
+        <div class="buttons">
+          <a class="btn primary" href="https://www.pressreader.com/uk/strathearn-herald/20261022/page/1" target="_blank" rel="noopener noreferrer">Read the newspaper edition</a>
+        </div>
+        <p class="press-source-note">Featured on the front page, with the full article on page 3. Access to the newspaper may require a PressReader subscription or library access.</p>
+      </div>
+    </article>
     <article class="news launch-news" aria-labelledby="launch-title">
       <div>
         <p class="eyebrow">Pre-launch announcement</p>
