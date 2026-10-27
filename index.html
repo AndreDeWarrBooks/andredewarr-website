@@ -39,6 +39,9 @@
     .book-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
     .book-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 12px 34px #0001}
     .book-card img{width:100%;aspect-ratio:2/3;object-fit:cover}.book-body{padding:22px}.book-body p{color:var(--muted);margin:8px 0 0}
+    /* Make the two Cookie & Mia website prices clearly prominent */
+    .book-body p.colouring-price{color:var(--ink);font-size:16px;font-weight:700;margin:18px 0 10px}
+    .book-body p.colouring-price strong{display:inline-block;font-size:32px;font-weight:900;line-height:1.1;color:#101722;letter-spacing:-.02em}
     .book-announcement{grid-column:1/-1;background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(24px,3vw,36px)}.book-announcement p{max-width:72ch;color:var(--muted)}
     .book-detail-link{margin:14px 0 0 10px}
     .placeholder{display:inline-block;margin-top:16px;padding:10px 15px;background:#eee7dc;border-radius:999px;color:#5c6470;font-size:13px;font-weight:700}
@@ -289,7 +292,8 @@
           <h3 id="cookie-mia-title">Cookie and Mia's Christmas Colouring Book</h3>
           <p>Meet Cookie and Mia, real-life twin Shihpoo sisters with very different personalities: Cookie is always curious and ready to explore, while Mia is calm, loving and protective. Join them for festive colouring adventures filled with Christmas trees, snowmen, Santa and plenty of seasonal fun.</p>
           <p><strong>40 Christmas illustrations · Large A4 paperback · Ages 4–9</strong></p>
-          <p>Website price: <strong>£6.99</strong>. A4 paperback with festive colouring adventures for children aged 4–9. Also available on Amazon.</p>
+          <p class="colouring-price">Website price: <strong>£6.99</strong></p>
+          <p>A4 paperback with festive colouring adventures for children aged 4–9. Also available on Amazon.</p>
           <div class="buttons">
             <a class="btn amazon" href="https://www.amazon.co.uk/s?k=Cookie+and+Mia%27s+Christmas+Colouring+Book+Andre+De+Warr" target="_blank" rel="noopener noreferrer" aria-label="Find Cookie and Mia's Christmas Colouring Book on Amazon UK (opens Amazon search results)">Also available on Amazon</a>
           </div>
@@ -303,7 +307,8 @@
           <h3 id="cookie-mia-adventure-book-title">Cookie and Mia's Adventure Colouring Book</h3>
           <p>Join real-life Shihpoo sisters Cookie and Mia on their adventures. Curious Cookie loves exploring fields and forests, while gentle Mia loves the water. From sunny beaches and woodland walks to sailing, camping and countryside discoveries, every page is ready to bring to life with colour.</p>
           <p><strong>40 colouring illustrations · Large A4 paperback · Ages 4–9</strong></p>
-          <p>Website price: <strong>£6.99</strong>. Scheduled for publication on 12 November 2026. Also available on Amazon from release.</p>
+          <p class="colouring-price">Website price: <strong>£6.99</strong></p>
+          <p>Scheduled for publication on 12 November 2026. Also available on Amazon from release.</p>
           <a class="btn amazon" href="https://www.amazon.co.uk/s?k=Cookie+and+Mia%27s+Adventure+Colouring+Book+Andre+De+Warr" target="_blank" rel="noopener noreferrer" aria-label="Find Cookie and Mia's Adventure Colouring Book on Amazon UK (search results)">Also available on Amazon (from 12 November)</a>
         </div>
       </article>
