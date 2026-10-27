@@ -42,6 +42,9 @@
     .book-announcement{grid-column:1/-1;background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(24px,3vw,36px)}.book-announcement p{max-width:72ch;color:var(--muted)}
     .book-detail-link{margin:14px 0 0 10px}
     .placeholder{display:inline-block;margin-top:16px;padding:10px 15px;background:#eee7dc;border-radius:999px;color:#5c6470;font-size:13px;font-weight:700}
+    /* Real front-cover images for Cookie & Mia book listings */
+    #cookie-and-mia .book-cover-image,#cookie-mia-adventure-book .book-cover-image{display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:contain;background:#f5f2ed;border-right:5px solid #caab60}
+    @media(max-width:700px){#cookie-and-mia .book-cover-image,#cookie-mia-adventure-book .book-cover-image{height:auto;border-right:0;border-bottom:5px solid #caab60}}
     /* Cookie & Mia Christmas colouring book */
     #cookie-and-mia{scroll-margin-top:150px}
     .cookie-mia-art{min-height:435px;background:radial-gradient(circle at 50% 75%,#ffffff70,transparent 46%),linear-gradient(150deg,#122d5b,#2268a2 48%,#d33a39);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:32px 22px;border-right:5px solid #caab60}
@@ -280,13 +283,7 @@
     </div>
     <div class="book-grid">
       <article class="book-card book-card-featured" id="cookie-and-mia" aria-labelledby="cookie-mia-title">
-        <div class="cookie-mia-art" role="img" aria-label="Cookie and Mia Christmas Adventure — festive children's colouring book">
-          <span class="cookie-mia-art-top">André De Warr Books</span>
-          <span class="cookie-mia-art-title">Cookie &amp; Mia</span>
-          <span class="cookie-mia-art-subtitle">Christmas Adventure</span>
-          <span class="cookie-mia-art-symbols" aria-hidden="true">❄ 🐾 🎄 🐾 ❄</span>
-          <span class="cookie-mia-art-bottom">Christmas colouring fun</span>
-        </div>
+        <img class="book-cover-image protected-image" src="cookie-mia-christmas-cover.avif" alt="Cookie and Mia's Christmas Colouring Book front cover featuring the two dogs in a snowy Christmas scene" loading="lazy" decoding="async" draggable="false">
         <div class="book-body">
           <div class="status">Now available on Amazon UK · Christmas colouring book</div>
           <h3 id="cookie-mia-title">Cookie and Mia's Christmas Colouring Book</h3>
@@ -301,13 +298,7 @@
         </div>
       </article>
       <article class="book-card book-card-featured" id="cookie-mia-adventure-book" aria-labelledby="cookie-mia-adventure-book-title">
-        <div class="cookie-mia-adventure-art" role="img" aria-label="Cookie and Mia's Adventure Colouring Book — beach, woodland and countryside adventures">
-          <span class="cookie-mia-art-top">André De Warr Books</span>
-          <span class="cookie-mia-art-title">Cookie &amp; Mia</span>
-          <span class="cookie-mia-art-subtitle">Adventure Colouring Book</span>
-          <span class="cookie-mia-art-symbols" aria-hidden="true">🐾 ☀ 🦋 🌳 🐾</span>
-          <span class="cookie-mia-art-bottom">Adventure colouring fun all year round</span>
-        </div>
+        <img class="book-cover-image protected-image" src="cookie-mia-adventure-cover.avif" alt="Cookie and Mia's Adventure Colouring Book front cover featuring both dogs outdoors with a map and compass" loading="lazy" decoding="async" draggable="false">
         <div class="book-body">
           <div class="status">Scheduled release · 12 November 2026</div>
           <h3 id="cookie-mia-adventure-book-title">Cookie and Mia's Adventure Colouring Book</h3>
