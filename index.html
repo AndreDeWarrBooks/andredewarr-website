@@ -7,6 +7,7 @@
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://andredewarrbooks.com/">
   <meta property="og:url" content="https://andredewarrbooks.com/">
+  <meta property="og:image" content="https://andredewarrbooks.com/what-we-leave-behind-cover.avif">
  <title>André De Warr Books | Official Author Website</title>
   <style>
     :root{
@@ -62,11 +63,10 @@
     .cookie-mia-adventure-art{min-height:435px;background:radial-gradient(circle at 48% 76%,#f5e6b380,transparent 46%),linear-gradient(145deg,#164b72,#308775 56%,#e5b96b);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:32px 22px;border-right:5px solid #caab60}
     .cookie-mia-adventure-art .cookie-mia-art-subtitle{color:#fff3c3}
     @media(max-width:700px){.cookie-mia-adventure-art{min-height:320px;border-right:0;border-bottom:5px solid #caab60}}
-    /* Promote the latest release in the homepage hero. */
-    .wwlb-feature-art{min-height:500px;background:radial-gradient(ellipse at 60% 65%,#71451b,transparent 68%),repeating-linear-gradient(135deg,#302017 0px,#302017 2px,#161210 2px,#161210 12px);color:#f1d9a4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;text-align:center;padding:36px 24px}
-    .wwlb-feature-art .wwlb-art-title{font-size:clamp(42px,5vw,66px)}
-    .wwlb-feature-art .wwlb-art-author{margin-top:20px}
-    @media(max-width:700px){.wwlb-feature-art{min-height:380px}}
+    /* Actual front cover of the current featured release. */
+    .feature .wwlb-hero-cover{display:block;width:100%;aspect-ratio:320/455;object-fit:contain;background:#17110e}
+    #what-we-leave-behind .wwlb-book-cover{display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:contain;background:#17110e;border-right:5px solid #b18a49}
+    @media(max-width:700px){#what-we-leave-behind .wwlb-book-cover{height:auto;border-right:0;border-bottom:5px solid #b18a49}}
     /* What We Leave Behind announcement and pre-order enquiries */
     #what-we-leave-behind{scroll-margin-top:125px}
     .book-card-featured{grid-column:1 / -1;display:grid;grid-template-columns:minmax(250px,0.75fr) minmax(0,1.55fr);align-items:stretch}
@@ -271,12 +271,7 @@
       <div class="buttons"><a class="btn primary" href="#what-we-leave-behind">Explore the new book</a><a class="btn secondary" href="#books">Browse all books</a></div>
     </div>
     <article class="feature" aria-label="What We Leave Behind featured release">
-      <div class="wwlb-feature-art" role="img" aria-label="What We Leave Behind book title, some truths never stay buried">
-        <span class="wwlb-art-label">The new novel by André De Warr</span>
-        <span class="wwlb-art-title">WHAT WE<br>LEAVE<br>BEHIND</span>
-        <span class="wwlb-art-subtitle">Some truths never stay buried</span>
-        <span class="wwlb-art-author">ANDRÉ DE WARR</span>
-      </div>
+      <img class="wwlb-hero-cover protected-image" src="what-we-leave-behind-cover.avif" alt="What We Leave Behind by André De Warr — official front cover showing an old journal, photographs and a key" draggable="false" decoding="async" fetchpriority="high">
       <div class="feature-body">
         <div class="status">New release · 30 October 2026</div>
         <h3>What We Leave Behind</h3>
@@ -297,12 +292,7 @@
     </div>
     <div class="book-grid">
       <article class="book-card book-card-featured" id="what-we-leave-behind" aria-labelledby="wwlb-book-title">
-        <div class="wwlb-title-art" role="img" aria-label="What We Leave Behind book title announcement">
-          <span class="wwlb-art-label">New novel · 30 October 2026</span>
-          <span class="wwlb-art-title">WHAT WE<br>LEAVE<br>BEHIND</span>
-          <span class="wwlb-art-subtitle">Some truths never stay buried</span>
-          <span class="wwlb-art-author">ANDRÉ DE WARR</span>
-        </div>
+        <img class="wwlb-book-cover protected-image" src="what-we-leave-behind-cover.avif" alt="What We Leave Behind by André De Warr official front cover" loading="lazy" decoding="async" draggable="false">
         <div class="book-body">
           <div class="status">Available now · Released 30 October 2026</div>
           <h3 id="wwlb-book-title">What We Leave Behind</h3>
