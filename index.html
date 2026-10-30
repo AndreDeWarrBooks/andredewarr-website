@@ -186,17 +186,14 @@
     .launch-notice strong{color:var(--gold)}
     .launch-notice span{display:inline-block;text-decoration:underline;text-underline-offset:3px;margin-left:12px}
     #news{scroll-margin-top:220px}
-    .launch-news{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:36px;align-items:center}
+    .launch-news{display:block}
     .launch-news h3{font-size:clamp(30px,4vw,44px);line-height:1.15}
     .launch-news .eyebrow{color:var(--accent);font-size:12px}
     .launch-date{font-weight:700;color:var(--ink)!important}
-    .launch-reel{margin:0;min-width:0}
-    .launch-reel video{display:block;width:100%;aspect-ratio:9/16;max-height:520px;object-fit:contain;border-radius:12px;background:var(--night)}
-    .launch-reel figcaption{margin-top:10px;font-size:13px;color:var(--muted)}
     .previous-news{margin-top:24px}
     .previous-news h3{font-size:28px}
-    a:focus-visible,video:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
-    @media(max-width:640px){.launch-news{grid-template-columns:1fr;gap:24px}.launch-reel{width:min(100%,320px);margin:auto}.launch-notice span{display:block;margin:4px 0 0}}
+    a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+    @media(max-width:640px){.launch-notice span{display:block;margin:4px 0 0}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
     /* Audiobook retail options */
@@ -302,7 +299,6 @@
           <div class="buttons">
             <a class="btn amazon" href="https://www.amazon.co.uk/s?k=What+We+Leave+Behind+Andre+De+Warr" target="_blank" rel="noopener noreferrer">Find on Amazon UK</a>
             <a class="btn primary" href="mailto:contact@andredewarrbooks.com?subject=What%20We%20Leave%20Behind%20signed%20copy%20enquiry">Signed-copy enquiry</a>
-            <a class="btn secondary" href="#news">Watch the book trailer</a>
             <a class="btn secondary" href="what-we-leave-behind.html">Read about this book</a>
           </div>
           <p class="wwlb-order-note">Amazon availability and delivery times may vary by format. Signed-copy enquiries open an email and do not take payment.</p>
@@ -602,13 +598,6 @@
         <p>Find the available editions on Amazon, or contact André De Warr Books about a signed copy.</p>
         <div class="buttons"><a class="btn primary" href="#what-we-leave-behind">View the book and buying options</a></div>
       </div>
-      <figure class="launch-reel">
-        <video controls playsinline preload="none" aria-label="What We Leave Behind promotional reel" aria-describedby="reel-caption">
-          <source src="what-we-leave-behind-reel.mp4" type="video/mp4">
-          Your browser does not support embedded video. <a href="what-we-leave-behind-reel.mp4">Watch the promotional reel</a>.
-        </video>
-        <figcaption id="reel-caption">What We Leave Behind · Launch trailer. Released 30 October 2026.</figcaption>
-      </figure>
     </article>
     <article class="news previous-news">
       <p class="eyebrow">New release · Children's colouring books</p>
