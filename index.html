@@ -62,6 +62,11 @@
     .cookie-mia-adventure-art{min-height:435px;background:radial-gradient(circle at 48% 76%,#f5e6b380,transparent 46%),linear-gradient(145deg,#164b72,#308775 56%,#e5b96b);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:32px 22px;border-right:5px solid #caab60}
     .cookie-mia-adventure-art .cookie-mia-art-subtitle{color:#fff3c3}
     @media(max-width:700px){.cookie-mia-adventure-art{min-height:320px;border-right:0;border-bottom:5px solid #caab60}}
+    /* Promote the latest release in the homepage hero. */
+    .wwlb-feature-art{min-height:500px;background:radial-gradient(ellipse at 60% 65%,#71451b,transparent 68%),repeating-linear-gradient(135deg,#302017 0px,#302017 2px,#161210 2px,#161210 12px);color:#f1d9a4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;text-align:center;padding:36px 24px}
+    .wwlb-feature-art .wwlb-art-title{font-size:clamp(42px,5vw,66px)}
+    .wwlb-feature-art .wwlb-art-author{margin-top:20px}
+    @media(max-width:700px){.wwlb-feature-art{min-height:380px}}
     /* What We Leave Behind announcement and pre-order enquiries */
     #what-we-leave-behind{scroll-margin-top:125px}
     .book-card-featured{grid-column:1 / -1;display:grid;grid-template-columns:minmax(250px,0.75fr) minmax(0,1.55fr);align-items:stretch}
@@ -260,17 +265,23 @@
 <section class="hero" id="home">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow">Official Author Website</p>
-      <h1>Stories shaped by family, journeys and difficult choices.</h1>
-      <p class="lead">Welcome to the official website of André De Warr. Explore the books, follow the latest release, and keep up with author updates.</p>
-      <div class="buttons"><a class="btn primary" href="#books">Explore the books</a><a class="btn secondary" href="#news">Latest news</a></div>
+      <p class="eyebrow">New novel · Out now · 30 October 2026</p>
+      <h1>What We Leave Behind</h1>
+      <p class="lead">The new novel by André De Warr. When a man from Dan Mercer's past contacts him after almost thirty years, secrets surrounding four missing women begin to surface.</p>
+      <div class="buttons"><a class="btn primary" href="#what-we-leave-behind">Explore the new book</a><a class="btn secondary" href="#books">Browse all books</a></div>
     </div>
-    <article class="feature">
-      <img src="northbound.png" alt="Northbound book cover" class="protected-image" draggable="false" decoding="async" fetchpriority="high">
+    <article class="feature" aria-label="What We Leave Behind featured release">
+      <div class="wwlb-feature-art" role="img" aria-label="What We Leave Behind book title, some truths never stay buried">
+        <span class="wwlb-art-label">The new novel by André De Warr</span>
+        <span class="wwlb-art-title">WHAT WE<br>LEAVE<br>BEHIND</span>
+        <span class="wwlb-art-subtitle">Some truths never stay buried</span>
+        <span class="wwlb-art-author">ANDRÉ DE WARR</span>
+      </div>
       <div class="feature-body">
-        <div class="status">Featured release · Available now</div>
-        <h3>Northbound</h3>
-        <p>A fictional motorcycle journey through Europe, following Mick and Brian through humour, friendship, spectacular landscapes and the unexpected turns of the open road.</p>
+        <div class="status">New release · 30 October 2026</div>
+        <h3>What We Leave Behind</h3>
+        <p>Family. Memory. Secrets. A past that refuses to stay buried.</p>
+        <a class="btn secondary" href="#what-we-leave-behind">View this book</a>
       </div>
     </article>
   </div>
@@ -285,6 +296,28 @@
       <div class="buttons"><a class="btn secondary" href="https://www.amazon.co.uk/Andr%C3%A9-De-Warr/e/B0HHFG7L8B" target="_blank" rel="noopener noreferrer">View All My Books on Amazon</a></div>
     </div>
     <div class="book-grid">
+      <article class="book-card book-card-featured" id="what-we-leave-behind" aria-labelledby="wwlb-book-title">
+        <div class="wwlb-title-art" role="img" aria-label="What We Leave Behind book title announcement">
+          <span class="wwlb-art-label">New novel · 30 October 2026</span>
+          <span class="wwlb-art-title">WHAT WE<br>LEAVE<br>BEHIND</span>
+          <span class="wwlb-art-subtitle">Some truths never stay buried</span>
+          <span class="wwlb-art-author">ANDRÉ DE WARR</span>
+        </div>
+        <div class="book-body">
+          <div class="status">Available now · Released 30 October 2026</div>
+          <h3 id="wwlb-book-title">What We Leave Behind</h3>
+          <p>A story of family, memory and long-buried secrets. When someone from Dan Mercer's past contacts him after almost thirty years, unanswered questions and the disappearance of four women force him to confront difficult truths.</p>
+          <p><strong>Out now:</strong> released on 30 October 2026. Find the available Kindle, paperback and hardback editions on Amazon.</p>
+          <p>Signed-copy enquiries are also welcome directly through André De Warr Books.</p>
+          <div class="buttons">
+            <a class="btn amazon" href="https://www.amazon.co.uk/s?k=What+We+Leave+Behind+Andre+De+Warr" target="_blank" rel="noopener noreferrer">Find on Amazon UK</a>
+            <a class="btn primary" href="mailto:contact@andredewarrbooks.com?subject=What%20We%20Leave%20Behind%20signed%20copy%20enquiry">Signed-copy enquiry</a>
+            <a class="btn secondary" href="#news">Watch the book trailer</a>
+            <a class="btn secondary" href="what-we-leave-behind.html">Read about this book</a>
+          </div>
+          <p class="wwlb-order-note">Amazon availability and delivery times may vary by format. Signed-copy enquiries open an email and do not take payment.</p>
+        </div>
+      </article>
       <article class="book-card book-card-featured" id="cookie-mia-christmas-stories" aria-labelledby="cookie-mia-stories-title">
         <img class="cookie-mia-cover" src="cookie-mia-christmas-stories-white-cover.avif" alt="Cookie &amp; Mia: Christmas Stories — approved white book cover" loading="lazy" decoding="async" style="display:block;width:100%;max-width:340px;height:auto;object-fit:contain;margin:0 auto;" />
         <div class="book-body">
@@ -326,28 +359,7 @@
           <a class="btn amazon" href="https://www.amazon.co.uk/s?k=Cookie+and+Mia%27s+Adventure+Colouring+Book+Andre+De+Warr" target="_blank" rel="noopener noreferrer" aria-label="Find Cookie and Mia's Adventure Colouring Book on Amazon UK (search results)">Also available on Amazon (from 12 November)</a>
         </div>
       </article>
-      <article class="book-card book-card-featured" id="what-we-leave-behind" aria-labelledby="wwlb-book-title">
-        <div class="wwlb-title-art" role="img" aria-label="What We Leave Behind book title announcement">
-          <span class="wwlb-art-label">New novel · 30 October 2026</span>
-          <span class="wwlb-art-title">WHAT WE<br>LEAVE<br>BEHIND</span>
-          <span class="wwlb-art-subtitle">Some truths never stay buried</span>
-          <span class="wwlb-art-author">ANDRÉ DE WARR</span>
-        </div>
-        <div class="book-body">
-          <div class="status">Available now · Released 30 October 2026</div>
-          <h3 id="wwlb-book-title">What We Leave Behind</h3>
-          <p>A story of family, memory and long-buried secrets. When someone from Dan Mercer's past contacts him after almost thirty years, unanswered questions and the disappearance of four women force him to confront difficult truths.</p>
-          <p><strong>Out now:</strong> released on 30 October 2026. Find the available Kindle, paperback and hardback editions on Amazon.</p>
-          <p>Signed-copy enquiries are also welcome directly through André De Warr Books.</p>
-          <div class="buttons">
-            <a class="btn amazon" href="https://www.amazon.co.uk/s?k=What+We+Leave+Behind+Andre+De+Warr" target="_blank" rel="noopener noreferrer">Find on Amazon UK</a>
-            <a class="btn primary" href="mailto:contact@andredewarrbooks.com?subject=What%20We%20Leave%20Behind%20signed%20copy%20enquiry">Signed-copy enquiry</a>
-            <a class="btn secondary" href="#news">Watch the book trailer</a>
-            <a class="btn secondary" href="what-we-leave-behind.html">Read about this book</a>
-          </div>
-          <p class="wwlb-order-note">Amazon availability and delivery times may vary by format. Signed-copy enquiries open an email and do not take payment.</p>
-        </div>
-      </article>
+
 
       <article class="book-card">
         <img src="troubles.jpg" alt="The Troubles and Tribulations in the Life of a Nobody book cover" class="protected-image" draggable="false" decoding="async">
