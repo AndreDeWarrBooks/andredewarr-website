@@ -298,20 +298,20 @@
     }
     header .wrap{
       display:flex;flex-direction:column;align-items:center;justify-content:center;
-      padding:23px 0 18px;gap:13px
+      padding:20px 0 18px;gap:11px
     }
     header .brand{display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px}
-    header .header-logo{width:160px;height:160px;object-fit:contain;display:block;filter:drop-shadow(0 4px 6px #15345216)}
-    header .brand strong{font:700 clamp(29px,3vw,40px)/1.1 Georgia,serif;letter-spacing:.015em;color:#173958}
-    header .brand span{margin:0;color:#766d5f;font-size:10px;letter-spacing:.24em}
+    header .header-logo{width:220px;height:220px;object-fit:contain;display:block;filter:drop-shadow(0 7px 10px #15345226)}
+    header .brand strong{font:700 clamp(30px,3.4vw,44px)/1.1 Georgia,serif;letter-spacing:.015em;color:#173958}
+    header .brand span{margin:0;color:#766d5f;font-size:13px;font-weight:800;letter-spacing:.2em}
     header nav{
       display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:4px 7px;
       width:fit-content;max-width:100%;padding:9px 12px;border-radius:10px;
       background:#1b3c60;box-shadow:0 5px 18px #21354b24
     }
     header nav a{
-      display:inline-block;padding:9px 10px;border-radius:5px;color:#f9f6f0;
-      font-size:12px;letter-spacing:.03em;text-transform:uppercase
+      display:inline-block;padding:10px 11px;border-radius:5px;color:#f9f6f0;
+      font-size:13px;font-weight:800;letter-spacing:.03em;text-transform:uppercase
     }
     header nav a:hover,header nav a:focus-visible{background:#d8c6a7;color:#152c46}
     .launch-notice{background:#143352}
@@ -453,13 +453,13 @@
     }
     @media(max-width:700px){
       header .wrap{align-items:center;gap:11px;padding:15px 0}
-      header .header-logo{height:115px;width:115px}
-      header .brand strong{font-size:clamp(25px,6vw,32px)}
+      header .header-logo{height:145px;width:145px}
+      header .brand strong{font-size:clamp(26px,6vw,34px)}
       header nav{
         width:100%;justify-content:flex-start;flex-wrap:nowrap;gap:4px;
         overflow-x:auto;padding:7px 8px;scrollbar-width:thin
       }
-      header nav a{white-space:nowrap;flex:0 0 auto;font-size:11px;padding:8px 9px}
+      header nav a{white-space:nowrap;flex:0 0 auto;font-size:12px;padding:8px 9px}
       .hero{padding:42px 0 58px}
       .hero-grid>div:first-child{padding-left:17px}
       .hero h1{font-size:clamp(42px,10vw,64px)}
@@ -481,6 +481,7 @@
     header{border-bottom-color:#c2a16a}
     header .brand strong{color:#946b2c;text-shadow:0 1px 0 #fffdf8}
     header .brand span{color:#846c49}
+    @media(max-width:700px){header .brand span{font-size:11px;letter-spacing:.14em}}
     header nav{border:1px solid #be9b5e}
     .hero-grid>div:first-child{border-left-color:#c29c5c}
     .eyebrow,.hero .eyebrow{color:#90692f}
