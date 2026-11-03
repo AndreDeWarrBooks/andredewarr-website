@@ -288,41 +288,41 @@
   
     /* Warm bookshop redesign: larger visual changes, preserving original books and shop links. */
     :root{
-      --ink:#182c43;--muted:#475362;--paper:#f4e7cb;--line:#d8c19c;
-      --accent:#20476d;--accent-dark:#132f4f;--night:#193a5b;--gold:#caa358
+      --ink:#182c43;--muted:#475362;--paper:#f3f1eb;--line:#d7cbb8;
+      --accent:#20476d;--accent-dark:#132f4f;--night:#193a5b;--gold:#bca276
     }
     body{background:var(--paper);color:var(--ink)}
     header{
-      position:relative;top:auto;background:#f5e9cf;color:var(--ink);
-      border-bottom:5px solid var(--gold);box-shadow:0 8px 28px #593e1712
+      position:relative;top:auto;background:#f6f3ed;color:var(--ink);
+      border-bottom:4px solid var(--gold);box-shadow:0 8px 28px #40372b10
     }
     header .wrap{
       display:flex;flex-direction:column;align-items:center;justify-content:center;
-      padding:20px 0 16px;gap:15px
+      padding:23px 0 18px;gap:13px
     }
     header .brand{display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px}
-    header .header-logo{width:100px;height:100px;object-fit:contain;display:block}
-    header .brand strong{font:700 clamp(24px,2.6vw,34px)/1.12 Georgia,serif;color:#1b3d60}
-    header .brand span{margin:0;color:#7b6339;font-size:10px;letter-spacing:.24em}
+    header .header-logo{width:160px;height:160px;object-fit:contain;display:block;filter:drop-shadow(0 4px 6px #15345216)}
+    header .brand strong{font:700 clamp(29px,3vw,40px)/1.1 Georgia,serif;letter-spacing:.015em;color:#173958}
+    header .brand span{margin:0;color:#766d5f;font-size:10px;letter-spacing:.24em}
     header nav{
       display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:4px 7px;
       width:fit-content;max-width:100%;padding:9px 12px;border-radius:10px;
       background:#1b3c60;box-shadow:0 5px 18px #21354b24
     }
     header nav a{
-      display:inline-block;padding:9px 10px;border-radius:5px;color:#f9ebcf;
+      display:inline-block;padding:9px 10px;border-radius:5px;color:#f9f6f0;
       font-size:12px;letter-spacing:.03em;text-transform:uppercase
     }
-    header nav a:hover,header nav a:focus-visible{background:#d4b16e;color:#152c46}
+    header nav a:hover,header nav a:focus-visible{background:#d8c6a7;color:#152c46}
     .launch-notice{background:#143352}
     .launch-notice a{font-weight:700;letter-spacing:.02em}
-    .launch-notice strong{color:#e9c980}
+    .launch-notice strong{color:#dbc4a0}
 
     .hero{
       padding:clamp(54px,7vw,96px) 0 clamp(62px,7vw,100px);
-      background:radial-gradient(circle at 88% 9%,#fff7e8 0,transparent 35%),
-        linear-gradient(120deg,#e4c99a 0%,#f1dfbb 42%,#faefd9 100%);
-      border-bottom:8px solid #d6b574
+      background:radial-gradient(circle at 88% 9%,#fcfaf6 0,transparent 35%),
+        linear-gradient(120deg,#e9e3da 0%,#f2ede4 42%,#faf8f3 100%);
+      border-bottom:6px solid #c6b89d
     }
     .hero-grid{
       display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
@@ -331,13 +331,13 @@
     .hero-grid>.feature{grid-column:1;grid-row:1;max-width:480px;justify-self:center}
     .hero-grid>div:first-child{
       grid-column:2;grid-row:1;max-width:650px;padding:10px 0 12px 27px;
-      border-left:5px solid #bc9754
+      border-left:5px solid #b6a183
     }
     .hero h1{
       max-width:13ch;font:700 clamp(46px,5.4vw,82px)/.98 Georgia,serif;
       letter-spacing:-.035em;color:#16334f;margin:15px 0 22px
     }
-    .hero .eyebrow{color:#75521c;font-size:13px}
+    .hero .eyebrow{color:#73624b;font-size:13px}
     .hero .lead{color:#344454;font-size:clamp(18px,1.7vw,22px);line-height:1.66}
     .hero .buttons{margin-top:30px}
     .hero .feature{
@@ -346,12 +346,12 @@
     }
     .hero .feature .wwlb-hero-cover{
       display:block;width:100%;height:auto;aspect-ratio:1122/1402;object-fit:contain;
-      border:7px solid #fff3da;border-radius:4px;
-      box-shadow:18px 18px 0 #85663738,0 20px 40px #3427173b
+      border:7px solid #faf7f1;border-radius:4px;
+      box-shadow:18px 18px 0 #71665724,0 20px 40px #3427172a
     }
     .hero .feature-body{
       position:relative;margin:-20px 12px 0;padding:18px 22px;
-      border:1px solid #d3b983;background:#fff4dd;border-radius:4px;
+      border:1px solid #d1c4b0;background:#f9f6ef;border-radius:4px;
       box-shadow:0 10px 24px #3b30221a
     }
     .hero .feature-body h3{font-size:23px}
@@ -361,34 +361,34 @@
     h2{font-size:clamp(34px,4.1vw,54px);line-height:1.12}
     h3{line-height:1.2}
     main section{padding:clamp(54px,6vw,88px) 0}
-    .eyebrow{color:#805f2c}
+    .eyebrow{color:#75644e}
     .btn,.paypal-btn{border-radius:6px;min-height:48px;line-height:1.25}
     .btn{padding:11px 20px}
-    .primary{background:#1b4368;color:#fff7e7}
+    .primary{background:#1b4368;color:#fffdf9}
     .primary:hover{background:#102c49}
-    .secondary{background:#fff4df;border:1px solid #a88955;color:#173450}
-    .secondary:hover{background:#f3ddb6}
+    .secondary{background:#f8f5ee;border:1px solid #b7a387;color:#173450}
+    .secondary:hover{background:#ece3d6}
     .amazon{background:#182c42;color:#fff;margin-top:15px}
     .amazon:hover{background:#0e1d2f}
 
-    #books{background:#fff1d4}
+    #books{background:#f7f5f0}
     #books .intro{max-width:840px;margin:0 auto 42px;text-align:center}
     #books .intro h2{color:#153756}
     #books .intro h2:after{
-      content:"";display:block;width:100px;height:4px;background:#cda65e;
+      content:"";display:block;width:100px;height:4px;background:#bda47e;
       margin:18px auto 0;border-radius:2px
     }
     #books .intro p{font-size:18px;line-height:1.7}
     #books .intro .buttons{justify-content:center}
     #books .book-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
     #books .book-card{
-      background:#fffaf0;border:1px solid #d7c49e;border-radius:8px;
+      background:#fffefa;border:1px solid #d9d0c1;border-radius:8px;
       box-shadow:0 10px 26px #3d2c1515
     }
     #books .book-card-featured{
       grid-column:1/-1;display:grid;
       grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);align-items:center;
-      border-left:7px solid #cba662;overflow:hidden
+      border-left:7px solid #baa17e;overflow:hidden
     }
     #books .book-card-featured>.book-body{padding:clamp(24px,4vw,50px)}
     #books .book-card-featured>:first-child{
@@ -404,43 +404,43 @@
     }
     #books .book-card:not(.book-card-featured)>img{
       width:100%;height:auto;aspect-ratio:2/3;object-fit:contain;
-      padding:16px;background:#ebdcc0
+      padding:16px;background:#eee9e0
     }
     #books .book-card:not(.book-card-featured)>.book-body{padding:23px 22px}
     #books .book-card:not(.book-card-featured) h3{font-size:clamp(24px,2.3vw,30px);color:#163858}
     #books .book-announcement{
-      background:#183b5c;color:#fff3d8;border:0;border-left:7px solid #d0ab62;
+      background:#183b5c;color:#f8f5ed;border:0;border-left:7px solid #bfa886;
       border-radius:8px;padding:36px
     }
     #books .book-announcement p{color:#e9e5dc}
-    #books .book-announcement .status{color:#e4c27b}
-    #books .book-announcement .secondary{background:transparent;color:#fff3d8;border-color:#d0ab62}
+    #books .book-announcement .status{color:#d7c3a2}
+    #books .book-announcement .secondary{background:transparent;color:#f8f5ed;border-color:#bfa886}
 
-    #about{background:#1a3a59;border-top:7px solid #d2ad6a}
+    #about{background:#1a3a59;border-top:6px solid #bba587}
     #about .about{grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr);gap:clamp(30px,6vw,70px)}
-    #about h2{color:#ffe5b2}
+    #about h2{color:#f3e9d8}
     #about .about p{color:#e6ebf0;line-height:1.75;font-size:18px}
-    #about .author-photo{border:6px solid #e4c78d;border-radius:4px;box-shadow:20px 20px 0 #a17e4450}
+    #about .author-photo{border:6px solid #cdbda6;border-radius:4px;box-shadow:20px 20px 0 #85796736}
     .journey-photo{border-radius:7px;box-shadow:14px 14px 0 #baa06e3b}
     .journey-copy h2{color:#1b3f60}
     .journey-copy p{color:#4a5361}
 
     #audiobook{background:#18354f}
-    #signed{background:#ead8b3}
+    #signed{background:#eeebe5}
     #signed .signed-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
     .signed-card,.merch-card,.mug-card,.calendar-card,.policy-card,.news{
-      border-radius:8px;border-color:#d4bd91;box-shadow:0 8px 23px #3f2f1a12
+      border-radius:8px;border-color:#d8cfbf;box-shadow:0 8px 23px #3f2f1a10
     }
-    .signed-card{background:#fff5df}
-    .signed-card img{max-height:420px;object-fit:contain;background:#ead9bd}
+    .signed-card{background:#fcfaf5}
+    .signed-card img{max-height:420px;object-fit:contain;background:#ece8e0}
     .signed-body{padding:28px}
-    #merchandise{background:#f8eccF}
-    .merch-card,.mug-card,.calendar-card,.bookmark-card{background:#fff8e7}
-    #news{background:#f5e4c3}
-    #contact{background:#f8ecd4}
-    .order-info{background:#f1dfbd}
-    .policy-card,.policy-contact{background:#fff7e5}
-    footer{background:#102b47;border-top:5px solid #c7a15a}
+    #merchandise{background:#f6f3ed}
+    .merch-card,.mug-card,.calendar-card,.bookmark-card{background:#fcfaf6}
+    #news{background:#eeeae3}
+    #contact{background:#f6f4ef}
+    .order-info{background:#ece6dd}
+    .policy-card,.policy-contact{background:#fcfaf6}
+    footer{background:#102b47;border-top:5px solid #bba581}
 
     @media(max-width:980px){
       .hero-grid{grid-template-columns:1fr;gap:35px}
@@ -453,7 +453,8 @@
     }
     @media(max-width:700px){
       header .wrap{align-items:center;gap:11px;padding:15px 0}
-      header .header-logo{height:80px;width:80px}
+      header .header-logo{height:115px;width:115px}
+      header .brand strong{font-size:clamp(25px,6vw,32px)}
       header nav{
         width:100%;justify-content:flex-start;flex-wrap:nowrap;gap:4px;
         overflow-x:auto;padding:7px 8px;scrollbar-width:thin
@@ -903,16 +904,6 @@
         <p>Find the available editions on Amazon, or contact André De Warr Books about a signed copy.</p>
         <div class="buttons"><a class="btn primary" href="#what-we-leave-behind">View the book and buying options</a></div>
       </div>
-    </article>
-    <article class="news previous-news">
-      <p class="eyebrow">New release · Children's colouring books</p>
-      <h3>Cookie &amp; Mia Christmas colouring book now on sale</h3>
-      <p><strong>Cookie and Mia's Christmas Colouring Book</strong> is available for £6.99 directly through the website and is also available on Amazon. A large A4 paperback with 40 festive illustrations, featuring the twin Shihpoo sisters. Their year-round Adventure Colouring Book is scheduled for 12 November 2026.</p>
-      <div class="buttons"><a class="btn primary" href="#cookie-and-mia">View the Christmas colouring book</a></div>
-    </article>
-    <article class="news previous-news">
-      <h3>Northbound is out now</h3>
-      <p><strong>Northbound</strong> is now available in ebook, paperback and hardback.</p>
     </article>
   </div>
 </section>
