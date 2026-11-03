@@ -245,7 +245,47 @@
     @media(prefers-reduced-motion:reduce){.footer-social-links a{transition:none}.footer-social-links a:hover{transform:none}}
 
     img.protected-image{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
-</style>
+
+    /* Calmer homepage presentation — visual-only draft, November 2026 */
+    :root{
+      --ink:#1a2534;--muted:#59646f;--paper:#f8f7f4;--line:#e0ddd5;
+      --accent:#284b70;--accent-dark:#193552;--night:#1a2c40;--gold:#c5a76a
+    }
+    body{background:var(--paper)}
+    header{background:rgba(248,247,244,.98);backdrop-filter:none}
+    header .wrap{padding:14px 0}
+    .hero{padding:56px 0 50px;background:#f3f0eb}
+    .hero-grid{gap:clamp(28px,4vw,54px)}
+    h1{font-size:clamp(36px,4.4vw,60px)}
+    h2{font-size:clamp(30px,4vw,46px)}
+    h3{font-size:clamp(23px,2.2vw,27px);line-height:1.18}
+    .lead{font-size:18px}
+    main section{padding:56px 0}
+    .intro{margin-bottom:28px}
+    .intro p{font-size:17px}
+    .book-grid,.signed-grid,.merch-grid,.policy-grid{gap:18px}
+    .feature,.book-card,.book-announcement,.signed-card,.merch-card,
+    .mug-card,.calendar-card,.news,.policy-card{
+      border-radius:12px;box-shadow:none
+    }
+    .feature-body,.book-body,.signed-body,.merch-body{padding:20px}
+    .btn{min-height:44px;padding:0 17px;border-radius:9px}
+    .paypal-btn{border-radius:9px}
+    .bookmark-card,.audiobook-purchase-option{border-radius:10px;box-shadow:none}
+    .signed-section{background:#f3f1ec}
+    .merch-section{background:#f8f7f4}
+    .dark{background:var(--night)}
+    #about .about p{font-size:18px;line-height:1.7}
+    .author-photo,.journey-photo{border-radius:12px;box-shadow:none}
+    .merch-jump{margin-bottom:22px}
+    .launch-notice{background:var(--night)}
+    #audiobook{background:#22364a}
+    @media(max-width:640px){
+      .hero{padding:42px 0}
+      main section{padding:44px 0}
+      .hero-grid{gap:28px}
+    }
+  </style>
 </head>
 <body>
 <header>
@@ -404,6 +444,35 @@
         <p>The forthcoming Dan Mercer prequel explores the years and choices leading up to the family separation at the heart of The Long Road Home.</p>
         <a class="btn secondary" href="before-the-silence.html">Read about this book</a>
       </article>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="about">
+  <div class="wrap about">
+    <div class="author-photo">
+      <img src="author-writing.jpg" alt="André De Warr writing at a table" class="protected-image" draggable="false" decoding="async">
+    </div>
+    <div>
+      <p class="eyebrow">About the Author</p>
+      <h2>André De Warr</h2>
+      <p><strong>They say history is written by the victors, the famous, and the extraordinary. But what about the rest of us?</strong></p>
+      <p>I was born in Worcester in 1976. I live in Scotland now, but Worcester will always be part of my story. I only began writing in 2026, after a difficult period in my life, and discovered how much I had to say.</p>
+      <p>My books don't all fit neatly onto one shelf. <em>The Troubles and Tribulations in the Life of a Nobody</em> is personal; <em>The Long Road Home</em> follows a family living with the consequences of past decisions; and <em>Northbound</em> takes readers on a fictional motorcycle journey through Europe. There is heartache in these stories, but there is humour too. That's life, really.</p>
+      <p>I'm still learning with every book. What matters most to me is telling a story that feels worth reading, whether it's drawn from life or entirely imagined.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap journey">
+    <div class="journey-photo">
+      <img src="author-travel.jpg" alt="André De Warr beside a loch with mountains in the distance" class="protected-image" draggable="false" decoding="async">
+    </div>
+    <div class="journey-copy">
+      <p class="eyebrow">Beyond the Page</p>
+      <h2>Stories shaped by roads and journeys</h2>
+      <p>I've spent plenty of time on the road, and those journeys have a way of finding their way into my writing. In <em>Northbound</em>, the journey becomes part of a story about friendship, humour and the unexpected things that happen along the way.</p>
     </div>
   </div>
 </section>
@@ -620,35 +689,6 @@
       </article>
     </div>
     <div class="merch-next"><strong>More to come:</strong> T-shirts, hoodies, tote bags and selected signed-book bundles.</div>
-  </div>
-</section>
-
-<section class="dark" id="about">
-  <div class="wrap about">
-    <div class="author-photo">
-      <img src="author-writing.jpg" alt="André De Warr writing at a table" class="protected-image" draggable="false" decoding="async">
-    </div>
-    <div>
-      <p class="eyebrow">About the Author</p>
-      <h2>André De Warr</h2>
-      <p><strong>They say history is written by the victors, the famous, and the extraordinary. But what about the rest of us?</strong></p>
-      <p>I was born in Worcester in 1976. I live in Scotland now, but Worcester will always be part of my story. I only began writing in 2026, after a difficult period in my life, and discovered how much I had to say.</p>
-      <p>My books don't all fit neatly onto one shelf. <em>The Troubles and Tribulations in the Life of a Nobody</em> is personal; <em>The Long Road Home</em> follows a family living with the consequences of past decisions; and <em>Northbound</em> takes readers on a fictional motorcycle journey through Europe. There is heartache in these stories, but there is humour too. That's life, really.</p>
-      <p>I'm still learning with every book. What matters most to me is telling a story that feels worth reading, whether it's drawn from life or entirely imagined.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap journey">
-    <div class="journey-photo">
-      <img src="author-travel.jpg" alt="André De Warr beside a loch with mountains in the distance" class="protected-image" draggable="false" decoding="async">
-    </div>
-    <div class="journey-copy">
-      <p class="eyebrow">Beyond the Page</p>
-      <h2>Stories shaped by roads and journeys</h2>
-      <p>I've spent plenty of time on the road, and those journeys have a way of finding their way into my writing. In <em>Northbound</em>, the journey becomes part of a story about friendship, humour and the unexpected things that happen along the way.</p>
-    </div>
   </div>
 </section>
 
