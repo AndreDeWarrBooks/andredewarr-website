@@ -285,12 +285,203 @@
       main section{padding:44px 0}
       .hero-grid{gap:28px}
     }
+  
+    /* Warm bookshop redesign: larger visual changes, preserving original books and shop links. */
+    :root{
+      --ink:#182c43;--muted:#475362;--paper:#f4e7cb;--line:#d8c19c;
+      --accent:#20476d;--accent-dark:#132f4f;--night:#193a5b;--gold:#caa358
+    }
+    body{background:var(--paper);color:var(--ink)}
+    header{
+      position:relative;top:auto;background:#f5e9cf;color:var(--ink);
+      border-bottom:5px solid var(--gold);box-shadow:0 8px 28px #593e1712
+    }
+    header .wrap{
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      padding:20px 0 16px;gap:15px
+    }
+    header .brand{display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px}
+    header .header-logo{width:100px;height:100px;object-fit:contain;display:block}
+    header .brand strong{font:700 clamp(24px,2.6vw,34px)/1.12 Georgia,serif;color:#1b3d60}
+    header .brand span{margin:0;color:#7b6339;font-size:10px;letter-spacing:.24em}
+    header nav{
+      display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:4px 7px;
+      width:fit-content;max-width:100%;padding:9px 12px;border-radius:10px;
+      background:#1b3c60;box-shadow:0 5px 18px #21354b24
+    }
+    header nav a{
+      display:inline-block;padding:9px 10px;border-radius:5px;color:#f9ebcf;
+      font-size:12px;letter-spacing:.03em;text-transform:uppercase
+    }
+    header nav a:hover,header nav a:focus-visible{background:#d4b16e;color:#152c46}
+    .launch-notice{background:#143352}
+    .launch-notice a{font-weight:700;letter-spacing:.02em}
+    .launch-notice strong{color:#e9c980}
+
+    .hero{
+      padding:clamp(54px,7vw,96px) 0 clamp(62px,7vw,100px);
+      background:radial-gradient(circle at 88% 9%,#fff7e8 0,transparent 35%),
+        linear-gradient(120deg,#e4c99a 0%,#f1dfbb 42%,#faefd9 100%);
+      border-bottom:8px solid #d6b574
+    }
+    .hero-grid{
+      display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
+      gap:clamp(32px,6vw,88px);align-items:center
+    }
+    .hero-grid>.feature{grid-column:1;grid-row:1;max-width:480px;justify-self:center}
+    .hero-grid>div:first-child{
+      grid-column:2;grid-row:1;max-width:650px;padding:10px 0 12px 27px;
+      border-left:5px solid #bc9754
+    }
+    .hero h1{
+      max-width:13ch;font:700 clamp(46px,5.4vw,82px)/.98 Georgia,serif;
+      letter-spacing:-.035em;color:#16334f;margin:15px 0 22px
+    }
+    .hero .eyebrow{color:#75521c;font-size:13px}
+    .hero .lead{color:#344454;font-size:clamp(18px,1.7vw,22px);line-height:1.66}
+    .hero .buttons{margin-top:30px}
+    .hero .feature{
+      border:0;border-radius:0;background:transparent;box-shadow:none;
+      overflow:visible;min-width:0
+    }
+    .hero .feature .wwlb-hero-cover{
+      display:block;width:100%;height:auto;aspect-ratio:1122/1402;object-fit:contain;
+      border:7px solid #fff3da;border-radius:4px;
+      box-shadow:18px 18px 0 #85663738,0 20px 40px #3427173b
+    }
+    .hero .feature-body{
+      position:relative;margin:-20px 12px 0;padding:18px 22px;
+      border:1px solid #d3b983;background:#fff4dd;border-radius:4px;
+      box-shadow:0 10px 24px #3b30221a
+    }
+    .hero .feature-body h3{font-size:23px}
+    .hero .feature-body p{margin:8px 0 0;font-size:15px}
+    .hero .feature-body .btn{margin-top:14px}
+
+    h2{font-size:clamp(34px,4.1vw,54px);line-height:1.12}
+    h3{line-height:1.2}
+    main section{padding:clamp(54px,6vw,88px) 0}
+    .eyebrow{color:#805f2c}
+    .btn,.paypal-btn{border-radius:6px;min-height:48px;line-height:1.25}
+    .btn{padding:11px 20px}
+    .primary{background:#1b4368;color:#fff7e7}
+    .primary:hover{background:#102c49}
+    .secondary{background:#fff4df;border:1px solid #a88955;color:#173450}
+    .secondary:hover{background:#f3ddb6}
+    .amazon{background:#182c42;color:#fff;margin-top:15px}
+    .amazon:hover{background:#0e1d2f}
+
+    #books{background:#fff1d4}
+    #books .intro{max-width:840px;margin:0 auto 42px;text-align:center}
+    #books .intro h2{color:#153756}
+    #books .intro h2:after{
+      content:"";display:block;width:100px;height:4px;background:#cda65e;
+      margin:18px auto 0;border-radius:2px
+    }
+    #books .intro p{font-size:18px;line-height:1.7}
+    #books .intro .buttons{justify-content:center}
+    #books .book-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+    #books .book-card{
+      background:#fffaf0;border:1px solid #d7c49e;border-radius:8px;
+      box-shadow:0 10px 26px #3d2c1515
+    }
+    #books .book-card-featured{
+      grid-column:1/-1;display:grid;
+      grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);align-items:center;
+      border-left:7px solid #cba662;overflow:hidden
+    }
+    #books .book-card-featured>.book-body{padding:clamp(24px,4vw,50px)}
+    #books .book-card-featured>:first-child{
+      grid-column:1;grid-row:1;max-height:510px;align-self:center
+    }
+    #books .book-card-featured>.book-body{grid-column:2;grid-row:1}
+    #books .book-card-featured:nth-child(even)>:first-child{grid-column:2;grid-row:1}
+    #books .book-card-featured:nth-child(even)>.book-body{grid-column:1;grid-row:1}
+    #books .book-card-featured img{object-fit:contain;max-height:510px}
+    #books .book-card-featured h3{font-size:clamp(28px,3vw,38px);color:#173958}
+    #books .book-card:not(.book-card-featured){
+      display:grid;grid-template-columns:minmax(130px,36%) minmax(0,1fr);align-items:start
+    }
+    #books .book-card:not(.book-card-featured)>img{
+      width:100%;height:auto;aspect-ratio:2/3;object-fit:contain;
+      padding:16px;background:#ebdcc0
+    }
+    #books .book-card:not(.book-card-featured)>.book-body{padding:23px 22px}
+    #books .book-card:not(.book-card-featured) h3{font-size:clamp(24px,2.3vw,30px);color:#163858}
+    #books .book-announcement{
+      background:#183b5c;color:#fff3d8;border:0;border-left:7px solid #d0ab62;
+      border-radius:8px;padding:36px
+    }
+    #books .book-announcement p{color:#e9e5dc}
+    #books .book-announcement .status{color:#e4c27b}
+    #books .book-announcement .secondary{background:transparent;color:#fff3d8;border-color:#d0ab62}
+
+    #about{background:#1a3a59;border-top:7px solid #d2ad6a}
+    #about .about{grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr);gap:clamp(30px,6vw,70px)}
+    #about h2{color:#ffe5b2}
+    #about .about p{color:#e6ebf0;line-height:1.75;font-size:18px}
+    #about .author-photo{border:6px solid #e4c78d;border-radius:4px;box-shadow:20px 20px 0 #a17e4450}
+    .journey-photo{border-radius:7px;box-shadow:14px 14px 0 #baa06e3b}
+    .journey-copy h2{color:#1b3f60}
+    .journey-copy p{color:#4a5361}
+
+    #audiobook{background:#18354f}
+    #signed{background:#ead8b3}
+    #signed .signed-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
+    .signed-card,.merch-card,.mug-card,.calendar-card,.policy-card,.news{
+      border-radius:8px;border-color:#d4bd91;box-shadow:0 8px 23px #3f2f1a12
+    }
+    .signed-card{background:#fff5df}
+    .signed-card img{max-height:420px;object-fit:contain;background:#ead9bd}
+    .signed-body{padding:28px}
+    #merchandise{background:#f8eccF}
+    .merch-card,.mug-card,.calendar-card,.bookmark-card{background:#fff8e7}
+    #news{background:#f5e4c3}
+    #contact{background:#f8ecd4}
+    .order-info{background:#f1dfbd}
+    .policy-card,.policy-contact{background:#fff7e5}
+    footer{background:#102b47;border-top:5px solid #c7a15a}
+
+    @media(max-width:980px){
+      .hero-grid{grid-template-columns:1fr;gap:35px}
+      .hero-grid>div:first-child{grid-column:1;grid-row:1;margin:auto}
+      .hero-grid>.feature{grid-column:1;grid-row:2;width:min(520px,100%)}
+      #about .about{grid-template-columns:1fr}
+      #about .author-photo{max-width:460px}
+      #books .book-grid{grid-template-columns:1fr}
+      #signed .signed-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:700px){
+      header .wrap{align-items:center;gap:11px;padding:15px 0}
+      header .header-logo{height:80px;width:80px}
+      header nav{
+        width:100%;justify-content:flex-start;flex-wrap:nowrap;gap:4px;
+        overflow-x:auto;padding:7px 8px;scrollbar-width:thin
+      }
+      header nav a{white-space:nowrap;flex:0 0 auto;font-size:11px;padding:8px 9px}
+      .hero{padding:42px 0 58px}
+      .hero-grid>div:first-child{padding-left:17px}
+      .hero h1{font-size:clamp(42px,10vw,64px)}
+      .hero .lead{font-size:18px}
+      #books .book-card-featured,#books .book-card:not(.book-card-featured){grid-template-columns:1fr}
+      #books .book-card-featured>:first-child,
+      #books .book-card-featured:nth-child(even)>:first-child{
+        grid-column:1;grid-row:1;width:100%;height:auto!important;max-height:430px
+      }
+      #books .book-card-featured>.book-body,
+      #books .book-card-featured:nth-child(even)>.book-body{grid-column:1;grid-row:2}
+      #books .book-card:not(.book-card-featured)>img{
+        width:min(270px,100%);max-height:360px;margin:0 auto;background:transparent
+      }
+      #signed .signed-grid{grid-template-columns:1fr}
+    }
+
   </style>
 </head>
 <body>
 <header>
   <div class="wrap">
-    <a class="brand" href="#home"><strong>André De Warr</strong><span>Author</span></a>
+    <a class="brand" href="#home"><img class="header-logo protected-image" src="andre-de-warr-books-logo.png" alt="Original blue-and-gold André De Warr Books company logo" draggable="false" decoding="async"><strong>André De Warr Books</strong><span>Official author website</span></a>
     <nav><a href="#books">Books</a><a href="#audiobook">Audiobook</a><a href="#signed">Signed Copies</a><a href="#merchandise">Merchandise</a><a href="#bookmarks">Bookmarks</a><a href="#about">About</a><a href="#news">News</a><a href="#contact">Contact</a><a href="#order-info">Order Info</a></nav>
   </div>
 </header>
@@ -316,6 +507,23 @@
         <a class="btn secondary" href="#what-we-leave-behind">View this book</a>
       </div>
     </article>
+  </div>
+</section>
+
+<section class="dark" id="about">
+  <div class="wrap about">
+    <div class="author-photo">
+      <img src="author-writing.jpg" alt="André De Warr writing at a table" class="protected-image" draggable="false" decoding="async">
+    </div>
+    <div>
+      <p class="eyebrow">About the Author</p>
+      <h2>André De Warr</h2>
+      <p><strong>They say history is written by the victors, the famous, and the extraordinary. But what about the rest of us?</strong></p>
+      <p>I was born in Worcester in 1976. I live in Scotland now, but Worcester will always be part of my story. I only began writing in 2026, after a difficult period in my life, and discovered how much I had to say.</p>
+      <p>My books don't all fit neatly onto one shelf. <em>The Troubles and Tribulations in the Life of a Nobody</em> comes from my own life; <em>The Long Road Home</em> mixes real-life experience with fiction; and <em>Northbound</em> and <em>What We Leave Behind</em> are entirely fictional. <em>Northbound</em> is especially full of friendship, travel and humour.</p>
+      <p>I'm still learning with every book.</p>
+      <p>When someone reads one of my books, I want them to picture the characters, understand what they're going through and feel as though they're right there beside them. I want readers to lose themselves in the story, almost as if they're living it themselves.</p>
+    </div>
   </div>
 </section>
 
@@ -448,22 +656,7 @@
   </div>
 </section>
 
-<section class="dark" id="about">
-  <div class="wrap about">
-    <div class="author-photo">
-      <img src="author-writing.jpg" alt="André De Warr writing at a table" class="protected-image" draggable="false" decoding="async">
-    </div>
-    <div>
-      <p class="eyebrow">About the Author</p>
-      <h2>André De Warr</h2>
-      <p><strong>They say history is written by the victors, the famous, and the extraordinary. But what about the rest of us?</strong></p>
-      <p>I was born in Worcester in 1976. I live in Scotland now, but Worcester will always be part of my story. I only began writing in 2026, after a difficult period in my life, and discovered how much I had to say.</p>
-      <p>My books don't all fit neatly onto one shelf. <em>The Troubles and Tribulations in the Life of a Nobody</em> comes from my own life; <em>The Long Road Home</em> mixes real-life experience with fiction; and <em>Northbound</em> and <em>What We Leave Behind</em> are entirely fictional. <em>Northbound</em> is especially full of friendship, travel and humour.</p>
-      <p>I'm still learning with every book.</p>
-      <p>When someone reads one of my books, I want them to picture the characters, understand what they're going through and feel as though they're right there beside them. I want readers to lose themselves in the story, almost as if they're living it themselves.</p>
-    </div>
-  </div>
-</section>
+
 
 <section>
   <div class="wrap journey">
