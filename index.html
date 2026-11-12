@@ -235,6 +235,9 @@
     .footer-social{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
     .footer-audio .footer-social-label{min-width:0}
     .footer-kobo-mark{font:700 25px/1 Georgia,serif}
+    .footer-inaudio-link{display:inline-flex;align-items:center;justify-content:center;border:1px solid #d8b06b88;border-radius:7px;overflow:hidden;background:#6800a3;text-decoration:none;transition:transform .2s ease}
+    .footer-inaudio-link:hover{transform:translateY(-2px)}
+    .footer-inaudio-link img{display:block;width:124px;height:auto;max-height:43px;object-fit:contain}
     .footer-social-label{font-size:13px;text-transform:uppercase;font-weight:700;letter-spacing:.06em;color:#c7cfd7}
     .footer-social-links{display:flex;align-items:center;gap:10px}
     .footer-social-links a{width:42px;height:42px;display:flex;align-items:center;justify-content:center;color:#f2d49b;background:#25303c;border:1px solid #d8b06b88;border-radius:50%;text-decoration:none;transition:background .2s ease,transform .2s ease}
@@ -1057,6 +1060,12 @@
         <span class="footer-kobo-mark" aria-hidden="true">K</span>
       </a>
     </div>
+  </nav>
+  <nav class="footer-social footer-distributor" aria-label="Audiobook distribution partner">
+    <span class="footer-social-label">Audiobook distributed via</span>
+    <a class="footer-inaudio-link" href="https://www.inaudio.com/" target="_blank" rel="noopener noreferrer" aria-label="INaudio audiobook distributor (opens in new tab)" title="Visit INaudio">
+      <img src="https://cdn.prod.website-files.com/67d2c304509d1df7b23d8e1c/67ed02ee321ee8113503a388_logo-INAudio-primary-C-6800a3.png" alt="INaudio logo" loading="lazy" decoding="async">
+    </a>
   </nav>
   </div>
   <p>Direct sales: André De Warr Books · © 2026 André De Warr. All rights reserved.</p>
