@@ -500,7 +500,38 @@
     #signed .signed-note{border-color:#c9a764}
     .btn.primary,.paypal-btn{border:1px solid #bd9857}
     footer .footer-brand strong{color:#e0bd78}
-  </style>
+  
+    /* Brand-first homepage: retain the original blue-and-gold logo in the header. */
+    .hero.brand-hero{
+      padding:clamp(66px,8vw,112px) 0 clamp(68px,8vw,112px);
+      background:radial-gradient(circle at 50% 0%,#fffdfa 0%,transparent 68%),
+                 linear-gradient(135deg,#eae4da 0%,#faf7f1 55%,#ece4d5 100%);
+      border-bottom:5px solid #c7a766;
+    }
+    .brand-hero-content{display:flex;flex-direction:column;align-items:center;text-align:center;max-width:1000px}
+    .hero.brand-hero h1{
+      max-width:none;margin:0;color:#163d61;
+      font:700 clamp(43px,6.7vw,78px)/1.1 Georgia,serif;letter-spacing:-.025em;
+    }
+    .hero.brand-hero .brand-hero-tagline{
+      margin:22px 0 0;color:#9c7635;
+      font:700 clamp(25px,3.5vw,42px)/1.2 Georgia,serif;
+      letter-spacing:.015em;
+    }
+    .hero.brand-hero .brand-hero-description{
+      max-width:660px;margin:24px 0 0;color:#435364;
+      font-size:clamp(17px,1.65vw,21px);line-height:1.65;
+    }
+    .hero.brand-hero .brand-hero-actions{justify-content:center;margin-top:30px}
+    .hero.brand-hero .btn.primary{background:#163d61}
+    .hero.brand-hero .btn.primary:hover{background:#0d2c48}
+    .hero.brand-hero .btn.secondary{border-color:#bd9e6c;background:#fff8}
+    @media(max-width:640px){
+      .hero.brand-hero{padding:52px 0 58px}
+      .hero.brand-hero .brand-hero-tagline{margin-top:18px}
+      .hero.brand-hero .brand-hero-actions{gap:10px}
+    }
+</style>
 </head>
 <body>
 <header>
@@ -511,26 +542,16 @@
 </header>
 
 <main>
-<aside class="launch-notice" aria-label="New novel release announcement">
-  <div class="wrap"><a href="what-we-leave-behind.html"><strong>OUT NOW</strong> · What We Leave Behind <span>Explore the new release</span></a></div>
-</aside>
-<section class="hero" id="home">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="eyebrow">New novel</p>
-      <h1>What We Leave Behind</h1>
-      <p class="lead">When someone from Dan Mercer's past gets in touch after almost thirty years, questions he thought were long buried begin to surface — including what happened to four missing women.</p>
-      <div class="buttons"><a class="btn amazon" href="https://amzn.eu/d/04oAApAZ" target="_blank" rel="noopener noreferrer">Buy on Amazon</a><a class="btn primary" href="what-we-leave-behind.html">Explore the new book</a><a class="btn secondary" href="#signed-what-we-leave-behind">Buy a signed copy</a><a class="btn secondary" href="#books">Browse all books</a></div>
+<section class="hero brand-hero" id="home" aria-labelledby="brand-hero-title">
+  <div class="wrap brand-hero-content">
+    <h1 id="brand-hero-title">André De Warr Books</h1>
+    <p class="brand-hero-tagline">Read. Explore. Escape. Belong.</p>
+    <p class="brand-hero-description">Novels, real-life stories, journeys and books for children. Discover something new with every page.</p>
+    <div class="buttons brand-hero-actions">
+      <a class="btn primary" href="#books">Explore the books</a>
+      <a class="btn secondary" href="#signed">Signed copies</a>
+      <a class="btn secondary" href="#merchandise">Shop merchandise</a>
     </div>
-    <article class="feature" aria-label="What We Leave Behind featured release">
-      <img class="wwlb-hero-cover protected-image" src="what-we-leave-behind-cover-hq.webp" alt="What We Leave Behind by André De Warr — official front cover showing an old journal, photographs and a key" draggable="false" decoding="async" fetchpriority="high">
-      <div class="feature-body">
-        <div class="status">New novel</div>
-        <h3>What We Leave Behind</h3>
-        <p>One unexpected message brings the past back into Dan Mercer's life.</p>
-        <a class="btn secondary" href="what-we-leave-behind.html">View this book</a>
-      </div>
-    </article>
   </div>
 </section>
 
