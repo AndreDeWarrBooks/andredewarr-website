@@ -533,6 +533,21 @@
     }
 
     .hero.brand-hero h1.brand-hero-tagline{margin:0;color:#9c7635;font:700 clamp(32px,5vw,60px)/1.15 Georgia,serif;letter-spacing:.015em;max-width:none}
+
+    /* One catalogue card per title, with compact signed-copy options. */
+    #books .catalogue-signed-note{background:transparent;color:var(--muted);font-size:15px;scroll-margin-top:120px}
+    #books .inline-signed{margin-top:16px;border:1px solid #c9ab73;border-radius:6px;overflow:hidden;scroll-margin-top:120px;background:#faf7ef}
+    #books .inline-signed summary{padding:12px 14px;font-weight:700;color:#173958;cursor:pointer}
+    #books .inline-signed summary:focus-visible{outline:3px solid #bfa886;outline-offset:-3px}
+    #books .inline-signed[open] summary{border-bottom:1px solid #d9d0c1}
+    #books .inline-signed-content{padding:10px 14px 15px}
+    #books .inline-signed-content .signed-price{color:#10385c;font-size:24px;margin:5px 0}
+    #books .inline-signed-content .signed-option{padding:12px 0}
+    #books .inline-signed-content .paypal-btn{margin:5px 0 0}
+    #books .inline-signed-content .signed-small{font-size:12px}
+    #books .bts-cover-pending{grid-column:1/-1;grid-template-columns:1fr!important}
+    #books .book-card img[hidden]{display:none!important}
+
 </style>
 </head>
 <body>
@@ -558,62 +573,112 @@
 
 
 
-<section id="latest-release" aria-labelledby="launch-title">
-  <div class="wrap">
-    <article class="news launch-news" aria-labelledby="launch-title">
-      <div>
-        <p class="eyebrow">Latest novel · Available now</p>
-        <h3 id="launch-title">Before the Silence</h3>
-        <p><em>Before the Silence</em> is the Dan Mercer prequel to <em>The Long Road Home</em>, exploring the years, choices and relationships that shaped the family separation at the heart of Dan's story.</p>
-        <p>Published 25 November 2026 and available now on Amazon UK.</p>
-        <div class="buttons">
-          <a class="btn primary" href="https://amzn.eu/d/0gOBgk3S" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-          <a class="btn secondary" href="#signed-before-the-silence">Buy a signed copy</a>
-          <a class="btn secondary" href="before-the-silence.html">Read about this book</a>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="dark" id="about">
-  <div class="wrap about">
-    <div class="author-photo">
-      <img src="author-writing-navy-shirt.webp" alt="André De Warr writing at his desk in a navy shirt" class="protected-image" draggable="false" decoding="async" loading="lazy">
-    </div>
-    <div>
-      <p class="eyebrow">About the Author</p>
-      <h2>André De Warr</h2>
-      <p><strong>They say history is written by the victors, the famous, and the extraordinary. But what about the rest of us?</strong></p>
-      <p>I was born in Worcester in 1976. I live in Scotland now, but Worcester will always be part of my story. I only began writing in 2026, after a difficult period in my life, and discovered how much I had to say.</p>
-      <p>My books don't all fit neatly onto one shelf. <em>The Troubles and Tribulations in the Life of a Nobody</em> comes from my own life; <em>The Long Road Home</em> mixes real-life experience with fiction; and <em>Northbound</em> and <em>What We Leave Behind</em> are entirely fictional. <em>Northbound</em> is especially full of friendship, travel and humour.</p>
-      <p>I'm still learning with every book.</p>
-      <p>When someone reads one of my books, I want them to picture the characters, understand what they're going through and feel as though they're right there beside them. I want readers to lose themselves in the story, almost as if they're living it themselves.</p>
-    </div>
-  </div>
-</section>
-
-
-
 <section id="books">
   <div class="wrap">
     <div class="intro">
       <p class="eyebrow">Books</p>
       <h2>Books by André De Warr</h2>
-      <p>I write about ordinary people, the decisions they make and the roads they end up taking. You'll find my novels, personal writing and children's books here, including <em>What We Leave Behind</em> and my latest novel, <em>Before the Silence</em>, available now.</p>
+      <p>Explore my novels, personal writing and children's books. Buy on Amazon or choose a signed edition directly from André De Warr Books, where available.</p>
+      <p id="signed" class="catalogue-signed-note">Signed-copy prices exclude UK postage. Select “Buy a signed copy” on a book to view its editions and secure PayPal checkout.</p>
       <div class="buttons"><a class="btn secondary" href="https://www.amazon.co.uk/Andr%C3%A9-De-Warr/e/B0HHFG7L8B" target="_blank" rel="noopener noreferrer">View All My Books on Amazon</a></div>
     </div>
     <div class="book-grid">
-
-      <article class="book-announcement" id="before-the-silence" aria-labelledby="before-title">
-        <div class="status">Latest novel · Available now on Amazon</div>
+      <article class="book-card bts-cover-pending" id="before-the-silence" aria-labelledby="before-title">
+        <img src="Before_the_Silence_Kindle_Cover.jpg" alt="Before the Silence by André De Warr — original front cover" class="protected-image" draggable="false" decoding="async" hidden onload="this.hidden=false;this.parentElement.classList.remove('bts-cover-pending')" onerror="this.hidden=true">
+        <div class="book-body"><span id="latest-release"></span><div class="status">Latest novel · Available now on Amazon</div>
         <h3 id="before-title">Before the Silence</h3>
         <p>The Dan Mercer prequel explores the years and choices leading up to the family separation at the heart of <em>The Long Road Home</em>.</p>
         <a class="btn amazon" href="https://amzn.eu/d/0gOBgk3S" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-        <a class="btn secondary" href="#signed-before-the-silence">Buy a signed copy</a>
+        
         <a class="btn secondary" href="before-the-silence.html">Read about this book</a>
+        <details class="inline-signed" id="signed-before-the-silence"><summary>Buy a signed copy</summary><div class="inline-signed-content"><p>Order a personally signed paperback or hardback securely through PayPal. UK postage is additional.</p>
+          <div class="signed-option">
+            <strong>Signed paperback</strong>
+            <div class="signed-price">£13.99</div>
+            <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/TSMC429ZR748E" target="_blank" rel="noopener noreferrer">Buy Signed Paperback</a>
+          </div>
+          <div class="signed-option">
+            <strong>Signed hardback</strong>
+            <div class="signed-price">£19.99</div>
+            <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/V6P86TGNU4PGL" target="_blank" rel="noopener noreferrer">Buy Signed Hardback</a>
+          </div>
+          <p class="signed-small">Subject to stock availability. UK postage is additional and calculated during checkout.</p></div></details>
+        </div>
       </article>
-
+      <article class="book-card">
+        <img src="The%20Troubles%20and%20Tribulations%20Cover.png" alt="The Troubles and Tribulations in the Life of a Nobody book cover" class="protected-image" draggable="false" decoding="async">
+        <div class="book-body">
+          <div class="status">Available now</div>
+          <h3>The Troubles and Tribulations in the Life of a Nobody</h3>
+          <p>A personal, reflective story shaped by anger, regret, prison, loss, redemption and hope.</p>
+          <p><strong>Giving back:</strong> 60% of the author's royalties from every copy sold are donated to two local mental-health services that have personally supported André, split equally at 30% each.</p>
+          <a class="btn amazon" href="https://amzn.eu/d/04O5prsP" target="_blank" rel="noopener">Buy on Amazon</a>
+          
+          <a class="btn secondary book-detail-link" href="the-troubles-and-tribulations.html">Read about this book</a>
+        <details class="inline-signed" id="signed-troubles"><summary>Buy a signed copy</summary><div class="inline-signed-content"><p>Personally signed copies are now available directly from the website.</p>
+          <div class="signed-price">£10.99</div>
+          <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/JS75UVAA6PX4G" target="_blank" rel="noopener">Buy Signed Paperback</a></div></details>
+        </div>
+      </article>
+      <article class="book-card">
+        <img src="The Long Road Home.png" alt="The Long Road Home book cover" class="protected-image" draggable="false" decoding="async">
+        <div class="book-body">
+          <div class="status">Available now</div>
+          <h3>The Long Road Home</h3>
+          <p>An emotional story about family, consequences and the long journey back to what matters most.</p>
+          <a class="btn amazon" href="https://amzn.eu/d/0hb4KW0d" target="_blank" rel="noopener">Buy on Amazon</a>
+          
+          <a class="btn secondary book-detail-link" href="the-long-road-home.html">Read about this book</a>
+        <details class="inline-signed" id="signed-the-long-road-home"><summary>Buy a signed copy</summary><div class="inline-signed-content"><p>Order a personally signed paperback with the current blue cover directly from André De Warr Books. UK postage is additional.</p>
+          <div class="signed-price">£10.99</div>
+          <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/89TFCSZHXWSM2" target="_blank" rel="noopener noreferrer">Buy Signed Paperback</a></div></details>
+        </div>
+      </article>
+      <article class="book-card">
+        <img src="northbound-front-2026.avif" alt="Northbound book cover" class="protected-image" draggable="false" decoding="async">
+        <div class="book-body">
+          <div class="status">Available now</div>
+          <h3>Northbound</h3>
+          <p>A fictional motorcycle journey through Europe, following Mick and Brian through humour, friendship, spectacular landscapes and the unexpected turns of the open road.</p>
+          <a class="btn amazon" href="https://amzn.eu/d/03QSdKdl" target="_blank" rel="noopener">Buy on Amazon</a>
+          
+          <a class="btn secondary book-detail-link" href="northbound.html">Read about this book</a>
+        <details class="inline-signed" id="signed-northbound"><summary>Buy a signed copy</summary><div class="inline-signed-content"><p>Personally signed paperback and hardback editions are now available directly from the website.</p>
+          <p><strong>SIGNED COPY — AVAILABLE DIRECT</strong><br>Buy your signed copy directly from André De Warr Books — <strong>for less than the Amazon hardback price.</strong></p>
+          <div class="signed-option">
+            <strong>Signed paperback</strong>
+            <div class="signed-price">£19.99</div><a class="paypal-btn" href="https://www.paypal.com/ncp/payment/7F7C8CUDWPPQL" target="_blank" rel="noopener">Buy Signed Paperback</a>
+                      </div>
+          <div class="signed-option">
+            <strong>Signed hardback</strong>
+            <div class="signed-price">£34.99</div><a class="paypal-btn" href="https://www.paypal.com/ncp/payment/RH3HZ75W9MKBL" target="_blank" rel="noopener">Buy Signed Hardback</a>
+                      </div>
+          <p class="signed-small">UK delivery is charged separately.</p></div></details>
+        </div>
+      </article>
+      <article class="book-card" id="what-we-leave-behind">
+        <img src="what-we-leave-behind-cover-hq.webp" alt="What We Leave Behind by André De Warr book cover" class="protected-image" draggable="false" decoding="async" loading="lazy">
+        <div class="book-body">
+          <div class="status">Available now</div>
+          <h3>What We Leave Behind</h3>
+          <p>A story of family, memory and long-buried secrets. When someone from Dan Mercer's past returns after almost thirty years, the disappearance of four women forces him to confront difficult truths.</p>
+          <a class="btn amazon" href="https://amzn.eu/d/04oAApAZ" target="_blank" rel="noopener">Buy on Amazon</a>
+          
+          <a class="btn secondary book-detail-link" href="what-we-leave-behind.html">Read about this book</a>
+        <details class="inline-signed" id="signed-what-we-leave-behind"><summary>Buy a signed copy</summary><div class="inline-signed-content"><p>Order a personally signed paperback or hardback securely through PayPal. UK postage is additional.</p>
+          <div class="signed-option">
+            <strong>Signed paperback</strong>
+            <div class="signed-price">£15.99</div>
+            <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/X28DN5XWVUZJN" target="_blank" rel="noopener">Buy Signed Paperback</a>
+          </div>
+          <div class="signed-option">
+            <strong>Signed hardback</strong>
+            <div class="signed-price">£19.99</div>
+            <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/E87PPY4VSZA4U" target="_blank" rel="noopener">Buy Signed Hardback</a>
+          </div>
+          <p class="signed-small">Subject to stock availability. UK postage is additional and calculated during checkout.</p></div></details>
+        </div>
+      </article>
       <article class="book-card book-card-featured" id="cookie-mia-christmas-stories" aria-labelledby="cookie-mia-stories-title">
         <img class="cookie-mia-cover" src="cookie-mia-christmas-stories-white-cover.avif" alt="Cookie &amp; Mia: Christmas Stories — approved white book cover" loading="lazy" decoding="async" style="display:block;width:100%;max-width:340px;height:auto;object-fit:contain;margin:0 auto;" />
         <div class="book-body">
@@ -677,59 +742,30 @@
           <p class="cookie-mia-order-note">UK postage at PayPal checkout: £3.50 for the first copy and £1.25 for each additional copy. Amazon button opens search results.</p>
         </div>
       </article>
-
-
-      <article class="book-card">
-        <img src="The%20Troubles%20and%20Tribulations%20Cover.png" alt="The Troubles and Tribulations in the Life of a Nobody book cover" class="protected-image" draggable="false" decoding="async">
-        <div class="book-body">
-          <div class="status">Available now</div>
-          <h3>The Troubles and Tribulations in the Life of a Nobody</h3>
-          <p>A personal, reflective story shaped by anger, regret, prison, loss, redemption and hope.</p>
-          <p><strong>Giving back:</strong> 60% of the author's royalties from every copy sold are donated to two local mental-health services that have personally supported André, split equally at 30% each.</p>
-          <a class="btn amazon" href="https://amzn.eu/d/04O5prsP" target="_blank" rel="noopener">Buy on Amazon</a>
-          <a class="btn secondary" href="#signed-troubles">Buy a signed copy</a>
-          <a class="btn secondary book-detail-link" href="the-troubles-and-tribulations.html">Read about this book</a>
-        </div>
-      </article>
-
-      <article class="book-card">
-        <img src="The Long Road Home.png" alt="The Long Road Home book cover" class="protected-image" draggable="false" decoding="async">
-        <div class="book-body">
-          <div class="status">Available now</div>
-          <h3>The Long Road Home</h3>
-          <p>An emotional story about family, consequences and the long journey back to what matters most.</p>
-          <a class="btn amazon" href="https://amzn.eu/d/0hb4KW0d" target="_blank" rel="noopener">Buy on Amazon</a>
-          <a class="btn secondary" href="#signed-the-long-road-home">Buy a signed copy</a>
-          <a class="btn secondary book-detail-link" href="the-long-road-home.html">Read about this book</a>
-        </div>
-      </article>
-
-      <article class="book-card">
-        <img src="northbound-front-2026.avif" alt="Northbound book cover" class="protected-image" draggable="false" decoding="async">
-        <div class="book-body">
-          <div class="status">Available now</div>
-          <h3>Northbound</h3>
-          <p>A fictional motorcycle journey through Europe, following Mick and Brian through humour, friendship, spectacular landscapes and the unexpected turns of the open road.</p>
-          <a class="btn amazon" href="https://amzn.eu/d/03QSdKdl" target="_blank" rel="noopener">Buy on Amazon</a>
-          <a class="btn secondary" href="#signed-northbound">Buy a signed copy</a>
-          <a class="btn secondary book-detail-link" href="northbound.html">Read about this book</a>
-        </div>
-      </article>
-      <article class="book-card" id="what-we-leave-behind">
-        <img src="what-we-leave-behind-cover-hq.webp" alt="What We Leave Behind by André De Warr book cover" class="protected-image" draggable="false" decoding="async" loading="lazy">
-        <div class="book-body">
-          <div class="status">Available now</div>
-          <h3>What We Leave Behind</h3>
-          <p>A story of family, memory and long-buried secrets. When someone from Dan Mercer's past returns after almost thirty years, the disappearance of four women forces him to confront difficult truths.</p>
-          <a class="btn amazon" href="https://amzn.eu/d/04oAApAZ" target="_blank" rel="noopener">Buy on Amazon</a>
-          <a class="btn secondary" href="#signed-what-we-leave-behind">Buy a signed copy</a>
-          <a class="btn secondary book-detail-link" href="what-we-leave-behind.html">Read about this book</a>
-        </div>
-      </article>
-
     </div>
   </div>
 </section>
+
+<section class="dark" id="about">
+  <div class="wrap about">
+    <div class="author-photo">
+      <img src="author-writing-navy-shirt.webp" alt="André De Warr writing at his desk in a navy shirt" class="protected-image" draggable="false" decoding="async" loading="lazy">
+    </div>
+    <div>
+      <p class="eyebrow">About the Author</p>
+      <h2>André De Warr</h2>
+      <p><strong>They say history is written by the victors, the famous, and the extraordinary. But what about the rest of us?</strong></p>
+      <p>I was born in Worcester in 1976. I live in Scotland now, but Worcester will always be part of my story. I only began writing in 2026, after a difficult period in my life, and discovered how much I had to say.</p>
+      <p>My books don't all fit neatly onto one shelf. <em>The Troubles and Tribulations in the Life of a Nobody</em> comes from my own life; <em>The Long Road Home</em> mixes real-life experience with fiction; and <em>Northbound</em> and <em>What We Leave Behind</em> are entirely fictional. <em>Northbound</em> is especially full of friendship, travel and humour.</p>
+      <p>I'm still learning with every book.</p>
+      <p>When someone reads one of my books, I want them to picture the characters, understand what they're going through and feel as though they're right there beside them. I want readers to lose themselves in the story, almost as if they're living it themselves.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
 
 
 
@@ -785,95 +821,7 @@
   </div>
 </section>
 
-<section class="signed-section" id="signed">
-  <div class="wrap">
-    <div class="intro">
-      <img class="shop-logo protected-image" src="andre-de-warr-books-logo.png" alt="André De Warr Books logo" draggable="false" decoding="async">
-      <p class="eyebrow">Signed Copies</p>
-      <h2>Signed books from André De Warr Books</h2>
-      <p>Personally signed editions can be ordered or requested directly from André De Warr Books. Prices shown exclude UK postage. Signed copies of <em>Before the Silence</em>, <em>What We Leave Behind</em> and <em>The Long Road Home</em> can be ordered directly from André De Warr Books. International customers can order standard copies through Amazon.</p>
-      <span class="signed-note">Signed books · Prices exclude UK postage</span>
-    </div>
-    <div class="signed-grid">
-      <article class="signed-card" id="signed-before-the-silence">
-        <div class="signed-body">
-          <div class="status">Latest novel · Signed editions available</div>
-          <h3>Before the Silence</h3>
-          <p>Order a personally signed paperback or hardback securely through PayPal. UK postage is additional.</p>
-          <div class="signed-option">
-            <strong>Signed paperback</strong>
-            <div class="signed-price">£13.99</div>
-            <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/TSMC429ZR748E" target="_blank" rel="noopener noreferrer">Buy Signed Paperback</a>
-          </div>
-          <div class="signed-option">
-            <strong>Signed hardback</strong>
-            <div class="signed-price">£19.99</div>
-            <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/V6P86TGNU4PGL" target="_blank" rel="noopener noreferrer">Buy Signed Hardback</a>
-          </div>
-          <p class="signed-small">Subject to stock availability. UK postage is additional and calculated during checkout.</p>
-        </div>
-      </article>
-      <article class="signed-card" id="signed-what-we-leave-behind">
-        <img src="what-we-leave-behind-cover-hq.webp" alt="What We Leave Behind by André De Warr — official book cover" class="protected-image" draggable="false" decoding="async" loading="lazy">
-        <div class="signed-body">
-          <div class="status">New release · Signed editions</div>
-          <h3>What We Leave Behind</h3>
-          <p>Order a personally signed paperback or hardback securely through PayPal. UK postage is additional.</p>
-          <div class="signed-option">
-            <strong>Signed paperback</strong>
-            <div class="signed-price">£15.99</div>
-            <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/X28DN5XWVUZJN" target="_blank" rel="noopener">Buy Signed Paperback</a>
-          </div>
-          <div class="signed-option">
-            <strong>Signed hardback</strong>
-            <div class="signed-price">£19.99</div>
-            <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/E87PPY4VSZA4U" target="_blank" rel="noopener">Buy Signed Hardback</a>
-          </div>
-          <p class="signed-small">Subject to stock availability. UK postage is additional and calculated during checkout.</p>
-        </div>
-      </article>
-      <article class="signed-card" id="signed-troubles">
-        <img src="The%20Troubles%20and%20Tribulations%20Cover.png" alt="The Troubles and Tribulations in the Life of a Nobody book cover" class="protected-image" draggable="false" decoding="async">
-        <div class="signed-body">
-          <div class="status">Signed paperback · Available now</div>
-          <h3>The Troubles and Tribulations in the Life of a Nobody</h3>
-          <p>Personally signed copies are now available directly from the website.</p>
-          <p><strong>Giving back:</strong> 60% of the author's royalties from every copy sold are donated to two local mental-health services that have personally supported André, split equally at 30% each.</p>
-          <div class="signed-price">£10.99</div>
-          <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/JS75UVAA6PX4G" target="_blank" rel="noopener">Buy Signed Paperback</a>
-        </div>
-      </article>
-      <article class="signed-card" id="signed-the-long-road-home">
-        <img src="The Long Road Home.png" alt="The Long Road Home current book cover" class="protected-image" draggable="false" decoding="async" loading="lazy">
-        <div class="signed-body">
-          <div class="status">Signed paperback · Available direct</div>
-          <h3>The Long Road Home</h3>
-          <p>Order a personally signed paperback with the current blue cover directly from André De Warr Books. UK postage is additional.</p>
-          <div class="signed-price">£10.99</div>
-          <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/89TFCSZHXWSM2" target="_blank" rel="noopener noreferrer">Buy Signed Paperback</a>
-        </div>
-      </article>
-      <article class="signed-card" id="signed-northbound">
-        <img src="northbound-front-2026.avif" alt="Northbound book cover" class="protected-image" draggable="false" decoding="async">
-        <div class="signed-body">
-          <div class="status">Signed editions · Available now</div>
-          <h3>Northbound</h3>
-          <p>Personally signed paperback and hardback editions are now available directly from the website.</p>
-          <p><strong>SIGNED COPY — AVAILABLE DIRECT</strong><br>Buy your signed copy directly from André De Warr Books — <strong>for less than the Amazon hardback price.</strong></p>
-          <div class="signed-option">
-            <strong>Signed paperback</strong>
-            <div class="signed-price">£19.99</div><a class="paypal-btn" href="https://www.paypal.com/ncp/payment/7F7C8CUDWPPQL" target="_blank" rel="noopener">Buy Signed Paperback</a>
-                      </div>
-          <div class="signed-option">
-            <strong>Signed hardback</strong>
-            <div class="signed-price">£34.99</div><a class="paypal-btn" href="https://www.paypal.com/ncp/payment/RH3HZ75W9MKBL" target="_blank" rel="noopener">Buy Signed Hardback</a>
-                      </div>
-          <p class="signed-small">UK delivery is charged separately.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
+
 
 
 <section class="merch-section" id="merchandise">
@@ -1105,6 +1053,18 @@
     img.addEventListener('contextmenu', function(e){ e.preventDefault(); });
     img.addEventListener('dragstart', function(e){ e.preventDefault(); });
   });
+})();
+</script>
+<script>
+(function(){
+ function revealSigned(){
+  var id=location.hash.slice(1);
+  if(id==="signed"){document.querySelectorAll("details.inline-signed").forEach(function(d){d.open=true;});return;}
+  var el=document.getElementById(id);
+  if(el && el.matches("details.inline-signed")){el.open=true;requestAnimationFrame(function(){el.scrollIntoView({block:"start"});});}
+ }
+ window.addEventListener("hashchange",revealSigned);
+ revealSigned();
 })();
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a4f62019ed5b4b79bc45c690fa54ec13"}'></script><!-- End Cloudflare Web Analytics -->
