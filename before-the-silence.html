@@ -38,6 +38,7 @@
     .more{margin-top:72px;background:#fff;padding:25px;border:1px solid var(--line);border-radius:18px}.more h2{font:700 27px Georgia,serif;margin:0 0 12px}
     footer{background:var(--night);color:#d0d7df;padding:24px 0;font-size:14px}footer a{color:#f1d9a4}
     @media(max-width:740px){.book{grid-template-columns:1fr}.cover{max-width:250px}.wrap{width:min(100% - 32px,1050px)}}
+  .cover[hidden]{display:none!important}
   </style>
 </head>
 <body>
@@ -48,6 +49,7 @@
 <main class="wrap">
   <div class="breadcrumbs"><a href="/">Home</a> / <a href="/#books">Books</a> / Before the Silence</div>
   <article class="book no-cover">
+    <img class="cover" src="/Before_the_Silence_Kindle_Cover.jpg" alt="Before the Silence by André De Warr — original front cover" width="320" loading="eager" draggable="false" hidden onload="this.hidden=false;this.parentElement.classList.remove('no-cover')" onerror="this.hidden=true">
     
     <div class="copy">
       <p class="eyebrow">A book by André De Warr</p>
